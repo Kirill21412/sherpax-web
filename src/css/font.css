@@ -1,0 +1,12 @@
+.title,
+h1 {
+  /* font-weight: 700; */
+  width: max-content;
+}
+p,
+h1 {
+  text-align: left;
+}
+.en {
+  font-family: "Georgia", serif !important;
+}

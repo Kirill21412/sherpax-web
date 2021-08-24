@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div.bm-menu,
+div.bg-white {
+  height: auto !important;
+  min-height: 100vh;
+}
