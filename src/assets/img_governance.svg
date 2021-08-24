@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="121px" height="121px" viewBox="0 0 121 121" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>img_governance</title>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="42.7083%"></stop>
+            <stop stop-color="#1DFF33" stop-opacity="0.577102" offset="64.7087%"></stop>
+            <stop stop-color="#BF1F89" stop-opacity="0.765056" offset="80.3121%"></stop>
+            <stop stop-color="#2170FF" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="63.9543936%" cy="2.83599727%" fx="63.9543936%" fy="2.83599727%" r="92.9103144%" gradientTransform="translate(0.639544,0.028360),scale(0.454418,1.000000),rotate(108.965000),translate(-0.639544,-0.028360)" id="radialGradient-2">
+            <stop stop-color="#21CAFF" offset="0%"></stop>
+            <stop stop-color="#21CAFF" offset="20.8333%"></stop>
+            <stop stop-color="#00E0FF" offset="64.5833%"></stop>
+            <stop stop-color="#002464" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="109.585919%" cy="133.9379%" fx="109.585919%" fy="133.9379%" r="222.535674%" gradientTransform="translate(1.095859,1.339379),scale(0.330031,1.000000),rotate(-144.079000),translate(-1.095859,-1.339379)" id="radialGradient-3">
+            <stop stop-color="#21CAFF" offset="0%"></stop>
+            <stop stop-color="#21CAFF" offset="20.8333%"></stop>
+            <stop stop-color="#00E0FF" offset="64.5833%"></stop>
+            <stop stop-color="#002464" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-4">
+            <stop stop-color="#1DFF33" stop-opacity="0.577102" offset="64.7087%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="81.421%"></stop>
+            <stop stop-color="#1FBF72" stop-opacity="0.765056" offset="92.4286%"></stop>
+            <stop stop-color="#2170FF" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="0%" x2="50.000133%" y2="105.714711%" id="linearGradient-5">
+            <stop stop-color="#D3FF21" offset="0%"></stop>
+            <stop stop-color="#5BFF21" offset="14.5833%"></stop>
+            <stop stop-color="#21BCFF" offset="66.6667%"></stop>
+            <stop stop-color="#4021FF" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="52.9451509%" cy="99.7968735%" fx="52.9451509%" fy="99.7968735%" r="77.8541862%" gradientTransform="translate(0.529452,0.997969),scale(0.385573,1.000000),rotate(-89.283800),translate(-0.529452,-0.997969)" id="radialGradient-6">
+            <stop stop-color="#4E6EC0" offset="0%"></stop>
+            <stop stop-color="#C2C7F4" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="35.5770254%" cy="23.4105181%" fx="35.5770254%" fy="23.4105181%" r="306.714488%" gradientTransform="translate(0.355770,0.234105),scale(0.307586,1.000000),rotate(54.122900),translate(-0.355770,-0.234105)" id="radialGradient-7">
+            <stop stop-color="#DFE2FF" offset="0%"></stop>
+            <stop stop-color="#4E6EC0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="8.03607451%" cy="16.0710111%" fx="8.03607451%" fy="16.0710111%" r="99.6486894%" id="radialGradient-8">
+            <stop stop-color="#3CA1FF" offset="0%"></stop>
+            <stop stop-color="#1AFF91" stop-opacity="0" offset="68.75%"></stop>
+        </radialGradient>
+        <radialGradient cx="8.0351809%" cy="16.0712748%" fx="8.0351809%" fy="16.0712748%" r="99.6487388%" id="radialGradient-9">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="68.75%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="2.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sherpax网站" transform="translate(-675.000000, -3582.000000)" fill-rule="nonzero">
+            <g id="img_governance" transform="translate(675.500000, 3582.313317)">
+                <circle id="椭圆形" fill="url(#radialGradient-1)" opacity="0.1" cx="59.9335997" cy="59.8560499" r="59.8376678"></circle>
+                <path d="M6.22856546,80.6253068 C11.8727218,80.6253068 36.7996501,90.031516 58.4340174,72.15946 C76.4364719,57.2880046 116.752859,66.045381 115.981383,75.0764792 C93.2369053,119.19108 72.059507,117.837119 36.7996501,109.784584 C18.6647867,107.325683 3.40684631,81.5656692 6.22856546,80.6253068 Z" id="路径" fill="url(#radialGradient-2)"></path>
+                <path d="M108.28213,28.2615385 C103.227035,28.2615385 80.5988824,21.9088647 61.2220743,34.5627709 C45.0980469,45.0920152 8.02148676,38.0065539 8.71245496,31.6124341 C11.5749021,24.0256567 49.0183299,2.2218202 80.5988824,7.92311348 C96.3147684,10.7604287 110.80939,27.5955585 108.28213,28.2615385 Z" id="路径" fill="url(#radialGradient-3)"></path>
+                <circle id="椭圆形" fill="url(#radialGradient-4)" opacity="0.08" cx="59.9335997" cy="59.8560499" r="40.6897749"></circle>
+                <g id="治理" transform="translate(31.728471, 26.951161)" fill="url(#linearGradient-5)">
+                    <path d="M56.410323,31.3390646 L56.410323,31.3390646 C55.0683798,44.5899818 44.5899917,55.0683644 31.3390748,56.4103131 L31.3390748,42.6211293 L31.3390748,42.621129 C37.0836745,41.5795378 41.5795331,37.0836627 42.6211409,31.3390646 L56.410323,31.3390646 Z M13.7891837,31.3390717 L13.7891833,31.3390717 C14.8307746,37.0836697 19.3266497,41.5795283 25.0712484,42.6211361 L25.0712484,56.4103199 L25.0712484,56.4103199 C11.8203316,55.0683712 1.34194899,44.5899886 3.0944838e-07,31.3390717 L13.7891837,31.3390717 Z M25.0712481,22.7772651 L25.0712485,22.7772649 C28.0690385,21.0463494 31.9024063,22.0733588 33.6333328,25.0711487 C35.3642483,28.0689387 34.3372389,31.9023065 31.3394489,33.633233 C28.341659,35.3641485 24.5082911,34.3371391 22.7773646,31.3393491 C22.7773187,31.3392695 22.7772727,31.3391899 22.7772267,31.3391103 L22.7772264,31.3391097 C21.0464982,28.3413362 22.0735517,24.5081171 25.071248,22.7773008 L25.0712481,22.7772651 Z M31.3390739,5.5088205e-05 L31.3390739,5.5088205e-05 C44.589991,1.34200378 55.0683735,11.8203864 56.4103222,25.0713052 L42.6211385,25.0713052 L42.6211389,25.0713052 C41.5778674,19.3275886 37.0827911,14.8325012 31.3390739,13.7892408 L31.3390739,5.5088205e-05 Z M25.0712481,5.5088205e-05 L25.0712481,13.7892388 L25.0712481,13.7892389 C19.3275307,14.8325104 14.8324434,19.3275867 13.7891829,25.0713144 L-1.89804177e-06,25.0713144 L-1.89804177e-06,25.0713144 C1.34194127,11.8203975 11.8203294,1.34201493 25.0712481,5.5088205e-05 L25.0712481,5.5088205e-05 Z" id="形状"></path>
+                </g>
+                <path d="M81.4751945,105.332654 C71.6490678,105.332654 71.8305917,105.332654 59.9335997,105.332654 C48.0363204,105.332654 48.2178443,103.917515 38.3920048,105.332654 C38.3920048,96.3437777 48.0363204,89.056687 59.9335997,89.056687 C71.8305917,89.056687 81.4751945,96.3437777 81.4751945,105.332654 Z" id="路径" fill="#6AFF35"></path>
+                <path d="M61.9803384,118.087576 C32.3032012,118.999217 10.0699488,96.4262102 5.84021359,81.9425035 C30.7858113,110.063189 95.4387435,103.620528 115.941746,75.6621233 C114.916366,83.4805734 99.5353804,116.934096 61.9803384,118.087576 Z" id="路径" fill="url(#radialGradient-6)"></path>
+                <path d="M58.0003133,0.994351402 C84.5852264,0.575309938 102.059194,16.7728028 108.282417,26.825547 C85.9397619,7.165711 27.0757742,12.0660504 8.71236879,31.6127213 C9.63078751,26.1463836 28.8177712,1.45433913 58.0003133,0.994351402 Z" id="路径" fill="url(#radialGradient-7)"></path>
+                <circle id="椭圆形" fill="url(#radialGradient-8)" cx="24.5094522" cy="39.7505614" r="13.8823516"></circle>
+                <circle id="椭圆形" fill="url(#radialGradient-9)" cx="43.6576323" cy="39.3671993" r="11.0101389"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

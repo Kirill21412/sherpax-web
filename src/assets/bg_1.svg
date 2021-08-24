@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1121px" height="1120px" viewBox="0 0 1121 1120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bg_1</title>
+    <defs>
+        <linearGradient x1="51.2732226%" y1="11.5552618%" x2="49.2867028%" y2="95.7339154%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="52.6042%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="2.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="背景切图" transform="translate(-143.000000, -64.000000)">
+            <g id="bg_1" transform="translate(143.812575, 64.000000)">
+                <circle id="椭圆形" stroke="" opacity="0.338350568" cx="560" cy="560" r="284.5"></circle>
+                <circle id="椭圆形" stroke="#FFFFFF" opacity="0.18217105" cx="560" cy="560" r="404.687713"></circle>
+                <circle id="椭圆形" stroke="#FFFFFF" opacity="0.149035935" cx="560" cy="560" r="559.5"></circle>
+                <path d="M325.695735,458.925569 C290.602043,506.269587 269.845876,564.880111 269.845876,628.338497 C269.845876,649.006637 272.047646,669.160525 276.229426,688.578404" id="路径" stroke="url(#linearGradient-1)" stroke-width="4" stroke-linecap="round" transform="translate(297.770805, 573.751987) rotate(-15.000000) translate(-297.770805, -573.751987) "></path>
+                <path d="M787.048565,274.565077 C751.954873,321.909095 731.198706,380.519619 731.198706,443.978005 C731.198706,464.646145 733.400476,484.800033 737.582257,504.217912" id="路径" stroke="url(#linearGradient-1)" stroke-width="4" stroke-linecap="round" transform="translate(759.123636, 389.391494) rotate(127.000000) translate(-759.123636, -389.391494) "></path>
+                <path d="M672.925885,693.758808 C637.832193,741.102826 617.076026,799.71335 617.076026,863.171736 C617.076026,883.839875 619.277796,903.993764 623.459576,923.411643" id="路径" stroke="url(#linearGradient-1)" stroke-width="4" stroke-linecap="round" transform="translate(645.000955, 808.585225) rotate(239.000000) translate(-645.000955, -808.585225) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
