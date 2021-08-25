@@ -1,9 +1,16 @@
-import React, { useContext } from "react";
+import React, { useState, useEffect, useCallback, useContext } from "react";
+import Header from "../../components/Header";
+import styled from 'styled-components';
+import Background from "../../components/Background";
+
+
 function Home(): React.ReactElement
 {
+
     return (
         <>
-            <p>1212</p>
+            <Header />
+            <Background />
         </>
     );
 }
