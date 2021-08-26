@@ -31,26 +31,42 @@ function Background(): React.ReactElement
 {
     const ChangeNetDiv = styled.div`
         height: 0px;
-        border-top: 51.56rem solid black;
+        border-top: 40rem solid black;
         border-bottom: 37px solid transparent;
         position: absolute;
-        z-index:-1;
+        z-index:-2;
     `;
     const ChangeNetDivl = styled.div`
         background: #fff;
         height:38rem;
-        top:51.56rem;
+        top:41.56rem;
         position: absolute;
-        transform: skew(0deg, -1deg);
-        z-index : -1;
+        transform: skew(0deg, -2deg);
+        z-index : -3;
     `;
     const ChangeNetDiv2 = styled.div`
         height: 0;
-        border-bottom: 30rem solid black;
+        border-bottom: 50rem solid black;
+        border-top: 5rem solid transparent;
+        position: absolute;
+        z-index: -3;
+        top: 83rem;
+    `;
+    const ChangeNetDiv3 = styled.div`
+        background: #fff;
+        height:38rem;
+        top:41.56rem;
+        position: absolute;
+        transform: skew(0deg, -2deg);
+        z-index : -3;
+    `;
+    const ChangeNetDiv4 = styled.div`
+        height: 0;
+        border-bottom: 70rem solid black;
         border-top: 10rem solid transparent;
         position: absolute;
-        z-index: -1;
-        top: 90rem;
+        z-index: -2;
+        top: 80rem;
     `;
 
     const size = ChangeSize()
@@ -60,14 +76,11 @@ function Background(): React.ReactElement
     }, [size])
     return (
         <>
-            <ChangeNetDiv style={{ width: `${size.width}px`, borderLeft: `${size.width}px solid black` }} >
-            </ChangeNetDiv>
-            <ChangeNetDivl style={{ width: `${size.width}px` }}>
-            </ChangeNetDivl>
+            <ChangeNetDiv style={{ width: `${size.width}px`, borderLeft: `${size.width}px solid black` }} />
+            <ChangeNetDivl style={{ width: `${size.width}px` }} />
             <ChangeNetDiv2 style={{ width: `${size.width}px`, borderRight: `${size.width}px solid black` }} />
-            <ChangeNetDivl style={{ width: `${size.width}px`, top: '120rem' }}>
-            </ChangeNetDivl>
-            <ChangeNetDiv2 style={{ width: `${size.width}px`, borderRight: `${size.width}px solid black`, top: '150rem' }} />
+            <ChangeNetDiv3 style={{ width: `${size.width}px`, top: '120rem' }} />
+            <ChangeNetDiv4 style={{ width: `${size.width}px`, borderRight: `${size.width}px solid black`, top: '150rem' }} />
         </>
     );
 }

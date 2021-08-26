@@ -10,3 +10,34 @@ h1 {
 .en {
   font-family: "Georgia", serif !important;
 }
+
+@media screen and (min-width: 1366px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1760px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 2200px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 2600px) {
+  html {
+    font-size: 16px;
+  }
+}
