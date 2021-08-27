@@ -123,11 +123,11 @@ line-height: 38px;
     return (
         <div className="flex flex-col justify-center">
             <>
-                <div className="flex flex-col flex-wrap justify-center mx-auto my-0">
+                <div className="flex flex-col justify-center mx-auto my-0">
                     <SherpaXTitle>SherpaX Crowdloan Has Started</SherpaXTitle>
                     <ContentDiv>SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other</ContentDiv>
                 </div>
-                <div>
+                <div style={{ position: "relative", marginTop: '-20vh' }}>
                     <BgDiv>
                         <img src={bg_circle} alt="" style={{ width: '100%', height: 'auto' }} />
                     </BgDiv>
