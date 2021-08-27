@@ -27,12 +27,12 @@ function ChangeSize()
     return size;
 }
 
-function Background(): React.ReactElement
+function BackgroundMobile(): React.ReactElement
 {
     const ChangeNetDiv = styled.div`
         height: 0px;
-        border-top: 40rem solid black;
-        border-bottom: 37px solid transparent;
+        border-top: 85.3vh solid black;
+        border-bottom: 9vh solid transparent;
         position: absolute;
         z-index:-2;
     `;
@@ -85,4 +85,4 @@ function Background(): React.ReactElement
     );
 }
 
-export default Background;
+export default BackgroundMobile;
