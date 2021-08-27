@@ -17,14 +17,12 @@ const BackBG = styled.div`
   width: 100vw;
   padding: 3vw 0 0vw;
   transform: skew(0deg, -10deg);
-`;
-
-const BannerWrap = styled.div`
   position: relative;
   * {
     text-align: center;
   }
 `;
+
 const Content = styled.div`
   transform: skew(0deg, 10deg);
   div.text {
@@ -45,7 +43,7 @@ const Content = styled.div`
   }
   .introduce {
     color: #ffffff;
-    font-weight: 200; // ?
+    font-weight: 200;
     font-size: 3.733vw;
     line-height: 5.6vw;
   }
@@ -84,7 +82,7 @@ const Content = styled.div`
 `;
 function FirstPage(): React.ReactElement {
   return (
-    <BannerWrap>
+    <>
       <TopTriangle></TopTriangle>
       <BackBG>
         <Content>
@@ -103,7 +101,7 @@ function FirstPage(): React.ReactElement {
           </div>
         </Content>
       </BackBG>
-    </BannerWrap>
+    </>
   );
 }
 
