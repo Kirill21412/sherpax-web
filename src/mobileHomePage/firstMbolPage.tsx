@@ -46,7 +46,7 @@ const Content = styled.div`
   .introduce {
     color: #ffffff;
     font-weight: 200; // ?
-    font-size: 3.733px;
+    font-size: 3.733vw;
     line-height: 5.6vw;
   }
   display: flex;
