@@ -19,10 +19,11 @@ const MbolWrap = styled.div`
   //   }
 `;
 
-const MobileHomePage = () => {
+const MobileHomePage = () =>
+{
   return (
     <>
-      {/* <HeaderMobile /> */}
+      <HeaderMobile />
       <FirstPage />
       <SecondPage />
       <ThirdPage />

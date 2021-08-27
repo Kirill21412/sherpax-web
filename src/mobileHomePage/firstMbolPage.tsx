@@ -80,7 +80,8 @@ const Content = styled.div`
     }
   }
 `;
-function FirstPage(): React.ReactElement {
+function FirstPage(): React.ReactElement
+{
   return (
     <>
       <TopTriangle></TopTriangle>
@@ -97,7 +98,7 @@ function FirstPage(): React.ReactElement {
           <div className="imgwrap">
             <img src={bannerImg} alt="bannerImg" className="bannerImg" />
             <img src={bannerbg} alt="bannerbg" className="bannerbg" />
-            <button className="join">Join</button>
+            <button className="join"><a href="https://ksmslot.chainx.cc/" target="_black">Join</a></button>
           </div>
         </Content>
       </BackBG>

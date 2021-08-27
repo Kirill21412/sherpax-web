@@ -78,7 +78,7 @@ function FirstPage(): React.ReactElement
                 </Bgcontent>
             </div>
             <JoinDiv className="mt-16.8">
-                <JoinSpan>Join</JoinSpan>
+                <JoinSpan><a href="https://ksmslot.chainx.cc/" target="_black">Join</a></JoinSpan>
             </JoinDiv>
         </div>
     );

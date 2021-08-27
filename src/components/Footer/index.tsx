@@ -27,9 +27,9 @@ function Footer(): React.ReactElement
     const list = [email, github, medium, telegram, twitter, wechat]
     return (
         <div className="flex flex-row justify-between bg-topBar-white px-15 h-12 mt-29 py-1">
-            <Version>
+            {/* <Version>
                 @2019-2021 ChainX. All rights reserved.
-            </Version>
+            </Version> */}
 
             <ImgContent>
                 {list?.map((item) =>

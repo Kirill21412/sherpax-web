@@ -34,9 +34,9 @@ function Footer(): React.ReactElement
                     return (<img src={item} alt="" style={{ marginRight: `${index === list.length - 1 ? '' : '7.8vw'}`, width: '8vw' }} />)
                 })}
             </ImgContent>
-            <Version>
+            {/* <Version>
                 @2019-2021 ChainX. All rights reserved.
-            </Version>
+            </Version> */}
             <img src={logo} alt="" style={{ width: '56px', height: '29px' }} />
         </div>
     );

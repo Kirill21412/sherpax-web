@@ -50,19 +50,19 @@ export default (props: JSX.IntrinsicAttributes & JSX.IntrinsicClassAttributes<Me
       <MenuItem>
         <div className="flex flex-row py-5">
           <img src={icon_chainx} alt="" style={{ width: '7.2vw', height: '4.5vh', marginLeft: '5.3vw', marginRight: '5.3vw' }} />
-          <ItemName>ChainX</ItemName>
+          <ItemName> <a href="https://www.chainx.org/zh/" target="_black">ChainX</a> </ItemName>
         </div>
       </MenuItem>
       <MenuItem>
         <div className="flex flex-row py-5">
           <img src={icon_crowdloan} alt="" style={{ width: '7.2vw', height: '4.5vh', marginLeft: '5.3vw', marginRight: '5.3vw' }} />
-          <ItemName>Crowdloan</ItemName>
+          <ItemName><a href="https://ksmslot.chainx.cc/" target="_black">Crowdloan</a></ItemName>
         </div>
       </MenuItem>
       <MenuItem>
         <div className="flex flex-row py-5">
           <img src={icon_lighterpaper} alt="" style={{ width: '7.2vw', height: '4.5vh', marginLeft: '5.3vw', marginRight: '5.3vw' }} />
-          <ItemName>LighterPaper</ItemName>
+          <ItemName><a href="https://www.chainx.org/static/SherpaX-9f87b1b0f2819f7b2e718cbb84e0781b.pdf" target="_black">LighterPaper</a></ItemName>
         </div>
       </MenuItem>
       {/* <BootomSpan>
