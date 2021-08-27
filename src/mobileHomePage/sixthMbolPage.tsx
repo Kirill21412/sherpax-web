@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { cellList } from "./assets/cellList";
+import { cellList } from "./assets/list";
 const KSXWrap = styled.div`
   background: #000000;
   width: 100vw;

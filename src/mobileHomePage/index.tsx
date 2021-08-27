@@ -7,10 +7,11 @@ import HeaderMobile from "../components/HeaderMobile";
 import { MenuButtonWrapper } from "../components/MenuButton/styles";
 import FirstPage from "../mobileHomePage/firstMbolPage";
 import SecondPage from "../mobileHomePage/secondMbolPage";
-import FifthPage from "./fifthMbolPage";
-import FourthPage from "./fourthMbolPage";
-import SixthPage from "./sixthMbolPage";
 import ThirdPage from "./thirdMbolPage";
+import FourthPage from "./fourthMbolPage";
+import FifthPage from "./fifthMbolPage";
+import SixthPage from "./sixthMbolPage";
+import FooterPage from "./footerMbolPage";
 
 const MbolWrap = styled.div`
   //   * {
@@ -18,17 +19,17 @@ const MbolWrap = styled.div`
   //   }
 `;
 
-const MobileHomePage = () =>
-{
+const MobileHomePage = () => {
   return (
     <>
-      <HeaderMobile />
+      {/* <HeaderMobile /> */}
       <FirstPage />
       <SecondPage />
       <ThirdPage />
       <FourthPage />
       <FifthPage />
       <SixthPage />
+      <FooterPage />
     </>
   );
 };
