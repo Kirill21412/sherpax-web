@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import HomePage from "./pages/HomePage/index";
-import MobileHomePage from "./pages/mobileHomePage/index";
+import MobileHomePage from "./mobileHomePage/index";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 

@@ -11,3 +11,8 @@ div.bg-white {
   height: auto !important;
   min-height: 100vh;
 }
+
+ul,
+li {
+  list-style: none;
+}
