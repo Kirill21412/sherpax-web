@@ -8,7 +8,7 @@ import smart from "./assets/icon_smart.png";
 const KSXWrap = styled.div`
   background: #000000;
   width: 100vw;
-  padding: 0vw 10vw;
+  padding: 0vw 10vw 20vw;
   .title {
     color: #ffffff;
     font-size: 7.2vw;
@@ -24,12 +24,33 @@ const KSXWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
   }
-  .image:nth-child(1) {
-    border: 1px solid red;
-    // &:nth-child(1) {
-    //   width: 12.4vw;
-    //   height: 23.333vw;
-    // }
+  li {
+    &:nth-child(1) {
+      height: 67vw;
+      .image {
+        width: 12.4vw;
+        height: 23.333vw;
+      }
+    }
+    &:nth-child(2) {
+      .image {
+        width: 22.933vw;
+        height: 19.467vw;
+      }
+    }
+    &:nth-child(3) {
+      height: 76.533vw;
+      .image {
+        width: 19.6vw;
+        height: 19.733vw;
+      }
+    }
+    &:nth-child(4) {
+      .image {
+        width: 19.867vw;
+        height: 16vw;
+      }
+    }
   }
 `;
 const Cell = styled.li`
@@ -38,7 +59,7 @@ const Cell = styled.li`
   border: 0.133vw solid #838383;
   padding: 5.6vw 4.267vw 4vw;
   width: 40vw;
-  height: 67vw;
+
   h1 {
     font-size: 4.8vw;
     line-height: 6.667vwpx;
@@ -48,8 +69,9 @@ const Cell = styled.li`
   .content {
     font-size: 3.733vw;
     line-height: 4.8vw;
-    font-weight: 300;
+    font-weight: 200;
     color: #ffffff;
+    margin: 3.733vw 0;
   }
   img {
     position: absolute;
@@ -99,7 +121,7 @@ function SixthPage(): React.ReactElement {
             <Cell>
               <h1>{item.title}</h1>
               <div className="content">{item.content}</div>
-              <img src={item.picture} alt="" className="image"/>
+              <img src={item.picture} alt="" className="image" />
             </Cell>
           );
         })}
