@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="140px" viewBox="0 0 76 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_fee</title>
+    <defs>
+        <linearGradient x1="75.6939978%" y1="50.8419228%" x2="11.3107224%" y2="108.326685%" id="linearGradient-1">
+            <stop stop-color="#2E05A4" offset="0%"></stop>
+            <stop stop-color="#A42EFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50.0000378%" y2="105.714711%" id="linearGradient-2">
+            <stop stop-color="#D3FF21" offset="0%"></stop>
+            <stop stop-color="#5BFF21" offset="14.5833%"></stop>
+            <stop stop-color="#21BCFF" offset="66.6667%"></stop>
+            <stop stop-color="#4021FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="45.2375375%" y1="18.801125%" x2="55.3401804%" y2="45.1689065%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="2.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sherpax网站" transform="translate(-171.000000, -3563.000000)">
+            <g id="icon_fee" transform="translate(171.500000, 3563.313317)">
+                <polygon id="路径" fill="url(#linearGradient-1)" fill-rule="nonzero" points="0 115.803332 37.057086 92.6429613 37.057086 138.964196"></polygon>
+                <line x1="18.4075799" y1="117.637241" x2="39.6773785" y2="104.086416" id="路径" stroke="#178CEC" stroke-width="2.61143" stroke-linecap="round"></line>
+                <line x1="27.9290273" y1="122.526023" x2="49.198826" y2="108.976184" id="路径" stroke="#178CEC" stroke-width="2.61143" stroke-linecap="round"></line>
+                <path d="M69.276633,66.4558028 L39.4761511,47.8345789 C37.9732522,46.8926926 37.057086,45.2457219 37.057086,43.4700525 L37.057086,0 L0,23.1606664 L0,63.7794385 C0,67.3306789 1.8271096,70.6298431 4.83803171,72.5083928 L34.6381194,91.1348395 C36.1410183,92.0766273 37.057086,93.7235979 37.057086,95.4992674 L37.057086,138.969123 L74.1141719,115.808259 L74.1141719,75.1898814 C74.1141719,71.6386409 72.2871609,68.3394768 69.276633,66.4558028 Z" id="路径" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                <line x1="11.4104429" y1="66.8419978" x2="32.7977063" y2="53.477816" id="路径" stroke="#FFFFFF" stroke-width="2.61143" stroke-linecap="round"></line>
+                <path d="M6.57310095,54.897642 L6.57310095,59.6933982 C6.57310095,60.8965254 7.88827299,61.6374799 8.91727243,61.0138917 L26.6830334,50.2489139 C28.2223937,49.3161922 29.1626047,47.6470491 29.1626047,45.8471377 L29.1626047,41.185993 C29.1626047,39.986709 27.854922,39.2452618 26.825824,39.8610651 L9.0772098,50.4810842 C7.52395477,51.4104554 6.57310095,53.0875806 6.57310095,54.897642 Z" id="路径" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <line x1="7.81416769" y1="46.0686653" x2="25.6760093" y2="34.9073424" id="路径" stroke="#FFFFFF" stroke-width="2.65164" stroke-linecap="round"></line>
+                <path d="M47.7827446,103.506976 L65.5881203,92.1639375 C65.8926222,91.9701995 66.2897556,92.1899532 66.2877921,92.5505268 L66.1695316,113.229355 C66.1616481,114.594194 65.4678963,115.863444 64.3247826,116.607453 L46.4877741,128.213014 C46.1838636,128.411088 45.7820985,128.191334 45.78416,127.828691 L45.9051803,106.905769 C45.9130639,105.528119 46.6202176,104.248029 47.7827446,103.506976 Z" id="路径" stroke="url(#linearGradient-3)" stroke-width="2.2097" stroke-linecap="round"></path>
+                <line x1="7.81416769" y1="39.8927963" x2="20.4383805" y2="32.0044248" id="路径" stroke="#FFFFFF" stroke-width="2.65164" stroke-linecap="round"></line>
+                <line x1="44.9134306" y1="97.3075551" x2="66.1833278" y2="83.7567303" id="路径" stroke="#FFFFFF" stroke-width="2.61143" stroke-linecap="round"></line>
+                <path d="M26.3479828,22.4144891 C26.3479828,23.2503417 25.9148807,24.0264765 25.2034895,24.4653928 L8.21790363,34.9446907 C7.41516188,35.4399742 6.38034833,34.8625047 6.38034833,33.9192388 L6.38034833,31.1371365 C6.38034833,30.3012839 6.81345047,29.5251491 7.52484167,29.0862329 L24.5104275,18.606935 C25.3131693,18.1116514 26.3479828,18.6891209 26.3479828,19.6322883 L26.3479828,22.4144891 Z" id="路径" fill="#FFFFFF"></path>
+                <line x1="15.6226198" y1="69.5926645" x2="28.2803377" y2="61.6832045" id="路径" stroke="#FFFFFF" stroke-width="2.61143" stroke-linecap="round"></line>
+                <line x1="20.0936726" y1="72.0906636" x2="41.4809361" y2="58.7263832" id="路径" stroke="#FFFFFF" stroke-width="2.61143" stroke-linecap="round"></line>
+                <line x1="28.1877061" y1="75.8137652" x2="30.8065205" y2="74.1773388" id="路径" stroke="#FFFFFF" stroke-width="4.17828" stroke-linecap="round"></line>
+                <line x1="36.5032671" y1="70.2853323" x2="39.12218" y2="68.6489059" id="路径" stroke="#FFFFFF" stroke-width="4.17828" stroke-linecap="round"></line>
+                <line x1="32.4454105" y1="79.81082" x2="45.1031284" y2="71.90136" id="路径" stroke="#FFFFFF" stroke-width="2.61143" stroke-linecap="round"></line>
+                <line x1="36.5632806" y1="82.3844026" x2="49.2209984" y2="74.4749426" id="路径" stroke="#FFFFFF" stroke-width="2.61143" stroke-linecap="round"></line>
+                <line x1="40.6811506" y1="84.9579852" x2="48.974145" y2="79.7759353" id="路径" stroke="#FFFFFF" stroke-width="2.61143" stroke-linecap="round"></line>
+                <line x1="52.9866712" y1="77.2635488" x2="59.4318617" y2="73.2361424" id="路径" stroke="#FFFFFF" stroke-width="2.61143" stroke-linecap="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,47 @@
+.title,
+h1 {
+  /* font-weight: 700; */
+  width: max-content;
+}
+p,
+h1 {
+  text-align: left;
+}
+.en {
+  font-family: "Georgia", serif !important;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 1366px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1760px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 2200px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 2600px) {
+  html {
+    font-size: 16px;
+  }
+}
