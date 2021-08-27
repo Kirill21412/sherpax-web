@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import styled from 'styled-components';
-import Background from "../../components/Background";
+import Background from "../../components/Background/index";
 import FirstPage from "../FirstPage";
 import SecondPage from "../SecondPage";
 import ThirdPage from "../ThirdPage";

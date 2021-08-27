@@ -17,7 +17,7 @@ function FirstPage(): React.ReactElement
     margin-top: 42px;
   `;
     return (
-        <div className="flex flex-row justify-between pt-40 flex-wrap">
+        <div className="flex flex-row justify-between pt-52">
             <div className="w-143.75 h-143.75">
                 <img src={img} alt="" />
             </div>

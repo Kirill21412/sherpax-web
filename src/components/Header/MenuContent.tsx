@@ -65,9 +65,9 @@ export default (props: JSX.IntrinsicAttributes & JSX.IntrinsicClassAttributes<Me
           <ItemName>LighterPaper</ItemName>
         </div>
       </MenuItem>
-      <BootomSpan>
+      {/* <BootomSpan>
         © 2019-2021 ChainX. All rights reserved.
-      </BootomSpan>
+      </BootomSpan> */}
     </Menu>
   );
 };
