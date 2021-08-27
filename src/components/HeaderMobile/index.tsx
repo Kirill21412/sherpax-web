@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import logo from "../../assets/SherpaX_logo_white.svg"
 import more from "../../assets/icon_more.svg"
 import styled from 'styled-components';
+import { MenuButtonWrapper } from "../MenuButton/styles";
+import MenuContent from "../Header/MenuContent";
 function HeaderMobile(): React.ReactElement
 {
     const MobileBox = styled.div`
@@ -24,9 +26,14 @@ function HeaderMobile(): React.ReactElement
     }
 
     return (
-        <MobileBox className="flex flex-row justify-between bg-topBar-black" style={{ width: '100vw', height: '5vh' }}>
-            <img src={logo} alt="" className="px-1 py-1" />
-        </MobileBox>
+        <>
+            <MenuButtonWrapper>
+                <MobileBox className="flex flex-row justify-between bg-topBar-black" style={{ width: '100vw', height: '5vh' }}>
+                    <img src={logo} alt="" className="px-1 py-1" />
+                    <MenuContent />
+                </MobileBox>
+            </MenuButtonWrapper>
+        </>
     );
 }
 
