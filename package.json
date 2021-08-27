@@ -52,7 +52,7 @@
     "rc-tween-one": "^2.7.3",
     "react": "16.13.1",
     "react-app-polyfill": "^1.0.6",
-    "react-burger-menu": "^3.0.4",
+    "react-burger-menu": "^3.0.6",
     "react-copy-to-clipboard": "^5.0.3",
     "react-dev-utils": "^10.2.1",
     "react-dom": "16.13.1",

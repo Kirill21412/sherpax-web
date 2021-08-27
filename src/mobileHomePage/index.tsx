@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Background from "../components/Background/BackgroundMobile";
 import FooterMobile from "../components/Footer/FooterMobile";
+import MenuContent from "../components/Header/MenuContent";
 import HeaderMobile from "../components/HeaderMobile";
+import { MenuButtonWrapper } from "../components/MenuButton/styles";
 import FirstPage from "../mobileHomePage/firstMbolPage";
 import SecondPage from "../mobileHomePage/secondMbolPage";
 import FifthPage from "./fifthMbolPage";
@@ -16,7 +18,8 @@ const MbolWrap = styled.div`
   //   }
 `;
 
-const MobileHomePage = () => {
+const MobileHomePage = () =>
+{
   return (
     <>
       <HeaderMobile />

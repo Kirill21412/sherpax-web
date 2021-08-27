@@ -66,7 +66,7 @@ function FirstPage(): React.ReactElement
     return (
         <div className="flex flex-col justify-center">
             <div className="flex flex-row justify-between h-105" >
-                <div className="flex flex-col flex-wrap ">
+                <div className="flex flex-col ">
                     <SherpaXTitle className="pt-28 w-148">SherpaX Crowdloan Has Started</SherpaXTitle>
                     <ContentDiv className="py-12">SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other</ContentDiv>
                 </div>

@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/SherpaX_logo_white.svg"
+import more from "../../assets/icon_more.svg"
 import styled from 'styled-components';
+import { MenuButtonWrapper } from "../MenuButton/styles";
+import MenuContent from "../Header/MenuContent";
 function HeaderMobile(): React.ReactElement
 {
     const MobileBox = styled.div`
@@ -15,14 +18,22 @@ function HeaderMobile(): React.ReactElement
         font-family: NotoSansSC-Regular, NotoSansSC;
         font-weight: 400;
     `;
-    return (
-        <MobileBox className="flex flex-row justify-between bg-topBar-black" style={{ width: '100vw', height: '5vh' }}>
-            <img src={logo} alt="" className="px-1 py-1" />
-            <LinkAddress>
-                <span className="mx-5">=</span>
-            </LinkAddress>
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-        </MobileBox>
+    const openMenu = () =>
+    {
+        setIsMenuOpen(!isMenuOpen)
+    }
+
+    return (
+        <>
+            <MenuButtonWrapper>
+                <MobileBox className="flex flex-row justify-between bg-topBar-black" style={{ width: '100vw', height: '5vh' }}>
+                    <img src={logo} alt="" className="px-1 py-1" />
+                    <MenuContent />
+                </MobileBox>
+            </MenuButtonWrapper>
+        </>
     );
 }
 

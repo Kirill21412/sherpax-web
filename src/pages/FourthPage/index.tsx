@@ -28,7 +28,7 @@ function FourthPage(): React.ReactElement
         margin-top:42px;
     `;
     return (
-        <div className="flex flex-row justify-between px-15 pt-30 flex-wrap">
+        <div className="flex flex-row justify-between px-15 pt-30 ">
             <div className="w-97.25 h-97.25">
                 <img src={img} alt="" />
             </div>
