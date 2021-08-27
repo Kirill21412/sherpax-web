@@ -14,6 +14,11 @@ function Home(): React.ReactElement
         font-family: NotoSansSC-Regular, NotoSansSC;
         font-weight: 400;
         margin:1rem 1rem;
+        text-decoration: none;
+        font-size: 16px;
+        // color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        line-height: 16px;
     `;
     return (
         <div className="flex flex-row justify-between bg-topBar-black px-15 py-1">
