@@ -40,3 +40,4 @@ export const ContentWrap = styled.div`
     }
   }
 `;
+

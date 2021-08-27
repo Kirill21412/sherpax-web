@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import fee from "./assets/icon_fee.png";
-import treasury from "./assets/icon_treasury.png";
-import governance from "./assets/icon_governance.png";
-import smart from "./assets/icon_smart.png";
-
+import { cellList } from "./assets/list";
 const KSXWrap = styled.div`
   background: #000000;
   width: 100vw;
@@ -79,31 +75,6 @@ const Cell = styled.li`
     bottom: 4vw;
   }
 `;
-
-const cellList = [
-  {
-    title: "Fee",
-    content: "As a transaction gas fee on the SherpaX network.",
-    picture: fee,
-  },
-  {
-    title: "Treasury",
-    content: "Get your projects funded from the treasury.",
-    picture: treasury,
-  },
-  {
-    title: "Governance",
-    content:
-      "Empowers the community to vote, elect council members, guide the development through on-chain governance.",
-    picture: governance,
-  },
-  {
-    title: "Deployment",
-    content:
-      "Enables developers to deploy new DApps and smart contracts on SherpaX ",
-    picture: smart,
-  },
-];
 
 interface cellListItem {
   title: string;
