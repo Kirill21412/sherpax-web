@@ -76,18 +76,21 @@ const Cell = styled.li`
   }
 `;
 
-interface cellListItem {
+interface cellListItem
+{
   title: string;
   content: string;
   picture: string;
 }
-function SixthPage(): React.ReactElement {
+function SixthPage(): React.ReactElement
+{
   return (
     <KSXWrap>
       <div className="title">KSX TOKEN</div>
       <div className="line" />
       <ul className="listwrap">
-        {cellList.map((item: cellListItem) => {
+        {cellList.map((item: cellListItem, i) =>
+        {
           return (
             <Cell>
               <h1>{item.title}</h1>

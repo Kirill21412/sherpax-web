@@ -12,7 +12,7 @@ const TopTriangle = styled.div`
 `;
 
 const BackBG = styled.div`
-  background: #000000;
+  background: #000000; 
   height: auto;
   width: 100vw;
   padding: 3vw 0 0vw;

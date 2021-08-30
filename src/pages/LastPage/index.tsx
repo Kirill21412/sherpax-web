@@ -23,12 +23,11 @@ function LastPage(): React.ReactElement
     `;
     const ContentSherpaX = styled.div`
         width: 412px;
-        height: 72px;
-        font-size: 16px;
-        font-family: Helvetica-Light, Helvetica;
-        font-weight: 300;
-        color: #FFFFFF;
-        line-height: 24px;
+        font-size:16px;
+        font-family:Helvetica-Light, Helvetica;
+        font-weight:300;
+        color:#ffffff;
+        line-height:24px;
         margin-top:42px;
     `;
     const Ksx = styled.div`
@@ -42,26 +41,31 @@ function LastPage(): React.ReactElement
     `;
 
     return (
-        <div className="flex flex-row justify-between px-15 pt-30 flex-wrap">
-            <div className="flex flex-col justify-center px-15">
-                <TitleContent>Decentralized NFT Auction Platform</TitleContent>
-                <ContentSherpaX>
-                    ComingChat, a decentralized NFT auction platform based on smart contracts, has so far issued more than 120,000 NFT.
-                </ContentSherpaX></div>
-            <div className="w-153 h-103.25">
-                <img src={img} alt="" />
+        <>
+            <div className="flex flex-row justify-center pt-30">
+                <div className="flex flex-col justify-start" style={{ margin: 'auto 0' }}>
+                    <TitleContent>Decentralized NFT Auction Platform</TitleContent>
+                    <ContentSherpaX>
+                        ComingChat, a decentralized NFT auction platform based on smart contracts, has so far issued more than 120,000 NFT.
+                    </ContentSherpaX></div>
+                <div >
+                    <img src={img} alt="" />
+                </div>
+
             </div>
-            <div className="flex flex-col justify-center mt-10" style={{ margin: '10rem auto 6rem auto' }}>
-                <Ksx>KSX TOKEN</Ksx>
-                <div style={{ width: '100px', height: '1px', background: '#FFFFFF', margin: '1rem auto' }}></div>
+            <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center mt-10" style={{ margin: '10rem auto 6rem auto' }}>
+                    <Ksx>KSX TOKEN</Ksx>
+                    <div style={{ width: '100px', height: '1px', background: '#FFFFFF', margin: '1rem auto' }}></div>
+                </div>
+                <div className="flex flex-row justify-center px-15">
+                    <KsxItem ksxName="Fee" ksxContent="As a transaction gas fee on the SherpaX network" ksximage={fee}  ></KsxItem>
+                    <KsxItem ksxName="Treasury" ksxContent="Get your projects funded from the treasury." ksximage={treasury} ></KsxItem>
+                    <KsxItem ksxName="Governance" ksxContent="Empowers the community to vote, elect council members, guide the development through on-chain governance." ksximage={governance} ></KsxItem>
+                    <KsxItem ksxName="Deployment" ksxContent="Enables developers to deploy new DApps and smart contracts on SherpaX " ksximage={smart} ></KsxItem>
+                </div>
             </div>
-            <div className="flex flex-row justify-between px-15 flex-wrap">
-                <KsxItem ksxName="Fee" ksxContent="As a transaction gas fee on the SherpaX network" ksximage={fee}  ></KsxItem>
-                <KsxItem ksxName="Treasury" ksxContent="Get your projects funded from the treasury." ksximage={treasury} ></KsxItem>
-                <KsxItem ksxName="Governance" ksxContent="Empowers the community to vote, elect council members, guide the development through on-chain governance." ksximage={governance} ></KsxItem>
-                <KsxItem ksxName="Deployment" ksxContent="Enables developers to deploy new DApps and smart contracts on SherpaX " ksximage={smart} ></KsxItem>
-            </div>
-        </div>
+        </>
     );
 }
 

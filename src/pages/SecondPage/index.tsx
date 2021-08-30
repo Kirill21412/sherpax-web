@@ -4,25 +4,44 @@ import imgSherpax from "../../assets/sherpax.svg";
 
 import styled from "styled-components";
 
-function FirstPage(): React.ReactElement
+function SecondPage(): React.ReactElement
 {
+
+    const ImgBoxLeft = styled.div`
+        width:35.93rem;
+        height:35.93rem;
+        padding-left:2.625rem;
+        margin-right:2.625rem;
+    `;
+    const ImgBoxRight = styled.div`
+        display:flex;
+        flex-direction:column;
+        margin:auto 0;
+        justify-content:start;
+        padding-right:2.625rem;
+`;
+    const ImgBoxTitle = styled.div`
+//         padding-left:6.25rem;
+//         padding-right:25.875rem;
+    `;
     const ContentSherpaX = styled.div`
-    width: 465px;
-    height: 168px;
-    font-size: 16px;
-    font-family: Helvetica-Light, Helvetica;
-    font-weight: 300;
-    color: #333333;
-    line-height: 24px;
-    margin-top: 42px;
-  `;
+        max-width:29rem;
+        font-size:16px;
+        font-family:Helvetica-Light, Helvetica;
+        font-weight:300;
+        color:#333333;
+        line-height:24px;
+        margin-top:42px;
+  `;
     return (
-        <div className="flex flex-row justify-between pt-52">
-            <div className="w-143.75 h-143.75">
+        <div className="flex flex-row pt-52">
+            <ImgBoxLeft>
                 <img src={img} alt="" />
-            </div>
-            <div className="flex flex-col justify-center px-15">
-                <img src={imgSherpax} alt="" className="w-38 mt-15" />
+            </ImgBoxLeft>
+            <ImgBoxRight>
+                <ImgBoxTitle>
+                    <img src={imgSherpax} alt="" />
+                </ImgBoxTitle>
                 <ContentSherpaX>
                     SherpaX, functions as a guide to ChainX as Sherpas, members of an
                     ethnic group in the Himalayas who are famous for their mountaineering
@@ -31,9 +50,9 @@ function FirstPage(): React.ReactElement
                     technological experiments will be first carried out on SherpaX as it
                     bears remarkable resemblance to ChainX in terms of design.
                 </ContentSherpaX>
-            </div>
-        </div>
+            </ImgBoxRight>
+        </div >
     );
 }
 
-export default FirstPage;
+export default SecondPage;

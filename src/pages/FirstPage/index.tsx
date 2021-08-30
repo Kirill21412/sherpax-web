@@ -1,6 +1,6 @@
 import React from "react";
 import bg_circle from "../../assets/bg_1.svg"
-import circle from "../../assets/img1.svg"
+import circle from "../../assets/img1.png"
 import styled from 'styled-components';
 
 
@@ -40,10 +40,10 @@ function FirstPage(): React.ReactElement
     const Bgcontent = styled.div`
         width:28.5rem;
         height:21.125rem;
-        top: 8.125rem;
+        top: 5.125rem;
         z-index:-1;
         position:absolute;
-        right:1rem;
+        right:4rem;
 
     `;
     const JoinDiv = styled.div`
@@ -62,10 +62,17 @@ function FirstPage(): React.ReactElement
         font-weight: bold;
         color: #FFFFFF;
     `;
+    const BgBox = styled.div`
+    width: 0px;
+    height: 0px;
+    border-color: red transparent transparent red;
+    border-width: 50px 50px 50px 50px;
+    border-style: solid;
+`;
 
     return (
-        <div className="flex flex-col justify-center">
-            <div className="flex flex-row justify-between h-105" >
+        <>
+            <div className="flex flex-row justify-center mr-96" >
                 <div className="flex flex-col ">
                     <SherpaXTitle className="pt-28 w-148">SherpaX Crowdloan Has Started</SherpaXTitle>
                     <ContentDiv className="py-12">SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other</ContentDiv>
@@ -77,10 +84,10 @@ function FirstPage(): React.ReactElement
                     <img src={circle} alt="" style={{ width: '100%', height: 'auto' }} />
                 </Bgcontent>
             </div>
-            <JoinDiv className="mt-16.8">
+            <JoinDiv className="mt-22.5 ml-28">
                 <JoinSpan><a href="https://ksmslot.chainx.cc/" target="_black">Join</a></JoinSpan>
             </JoinDiv>
-        </div>
+        </>
     );
 }
 
