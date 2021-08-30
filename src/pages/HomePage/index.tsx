@@ -16,52 +16,19 @@ function Home(): React.ReactElement
         margin: 0 auto;
         max-width:1280px;
         position: relative;
-        // @media screen and (min-width: 1366px){
-        //     width: 1280px
-        // }
-        // @media screen and (min-width: 1600px){
-        //     width: 1500px
-        // }
-        // @media screen and (min-width: 1800px){
-        //     width: 1700px
-        // }
-        // @media screen and (min-width: 1920px){
-        //     width: calc(100% - 80px)
-        // }
-    `;
-    const [routeName, setRouteName] = useState<string>("");
-    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-    const [isIOS, setIsIOS] = useState<boolean>(false);
-    const [isAndroid, setIsAndroid] = useState<boolean>(false);
-    const [isSafari, setIsSafari] = useState<boolean>(false);
-    const [isBrowser, setIsBrowser] = useState<boolean>(true);
-    const [ua, setUa] = useState<string>("");
-    const [groupString, setGroupString] = React.useState<string>("");
-    const [inviteString, setInviteString] = useState<string>("");
-    const [isWindows, setIsWindows] = useState(false);
-    useEffect(() =>
-    {
-        // if (isIOS || isAndroid) {
-        //   setBrowserType("MBOL");
-        // } else if (ua && !isIOS && !isAndroid) {
-        //   setBrowserType("CBOL");
-        // }
-    }, [isIOS, isAndroid, ua]);
-    useEffect(() =>
-    {
-        ua?.match(/windows/) && setIsWindows(true);
-    }, [ua]);
-    useEffect(() =>
-    {
-        if (typeof window !== "undefined") {
-            setUa(window.navigator.userAgent.toLowerCase());
+        @media screen and (min-width: 1366px){
+            width: 1280px
         }
-    });
-    useEffect(() =>
-    {
-        ua?.match(/(iphone|ipad|ipod)/) && setIsIOS(true);
-        ua?.match(/android[\s\/]([\d\.]+)/) && setIsAndroid(true);
-    }, [ua]);
+        @media screen and (min-width: 1600px){
+            width: 1500px
+        }
+        @media screen and (min-width: 1800px){
+            width: 1700px
+        }
+        @media screen and (min-width: 1920px){
+            width: calc(100% - 80px)
+        }
+    `;
     return (
         <>
             <Header />
@@ -73,7 +40,9 @@ function Home(): React.ReactElement
                 <FourthPage />
                 <LastPage />
             </FitMedia>
-            <Footer />
+            <div style={{ position: 'absolute', zIndex: 10, top: '254.2rem', width: '100%' }}>
+                <Footer />
+            </div>
         </>
     );
 }

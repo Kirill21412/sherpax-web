@@ -10,34 +10,20 @@ import styled from 'styled-components';
 function Footer(): React.ReactElement
 {
 
-    const Version = styled.div`
-        padding: 10px 0px;
-        height: 20px;
-        font-size: 14px;
-        font-family: NotoSansSC-Regular, NotoSansSC;
-        font-weight: 400;
-        color: #000000;
-        line-height: 20px;
-    `;
-
     const ImgContent = styled.div`
         display:flex;
-        flex-direction:flex-row;
+        flex-direction:row;
     `;
     const list = [email, github, medium, telegram, twitter, wechat]
     return (
-        <div className="flex flex-row justify-between bg-topBar-white px-15 h-12 mt-29 py-1">
-            {/* <Version>
-                @2019-2021 ChainX. All rights reserved.
-            </Version> */}
-
+        <div className="flex flex-row justify-between bg-topBar-white px-15 mt-29 py-5">
             <ImgContent>
-                {list?.map((item) =>
+                {list?.map((item, i) =>
                 {
                     return (<img src={item} alt="" style={{ marginRight: "24px", width: '24px' }} />)
                 })}
-                <img src={logo} alt="" style={{ width: '126px', height: '29px' }} />
             </ImgContent>
+            <img src={logo} alt="" style={{ width: "126px", height: '29px' }} />
         </div>
     );
 }

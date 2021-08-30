@@ -37,11 +37,13 @@ const IconWrap = styled.div`
   }
 `;
 
-function FooterMbolPage(): React.ReactElement {
+function FooterMbolPage(): React.ReactElement
+{
   return (
     <FooterWrap>
       <IconWrap>
-        {iconList.map((item) => {
+        {iconList.map((item, i) =>
+        {
           return (
             <a href={item.address}>
               <img src={item.icon} alt="" />

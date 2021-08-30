@@ -9,8 +9,7 @@ import styled from 'styled-components';
 function ThirdPage(): React.ReactElement
 {
     const TitleContent = styled.div`
-        width: 412px;
-        height: 76px;
+        max-width: 25.75rem;
         font-size: 32px;
         font-family: Helvetica-Bold, Helvetica;
         font-weight: bold;
@@ -18,21 +17,22 @@ function ThirdPage(): React.ReactElement
         line-height: 38px;
     `;
     const ContentSherpaX = styled.div`
-        width: 442px;
-        height: 96px;
-        font-size: 16px;
-        font-family: Helvetica-Light, Helvetica;
-        font-weight: 300;
-        color: #FFFFFF;
-        line-height: 24px;
-        margin-top:42px;
+        max-width: 27.625rem;
+        font-size:16px;
+        font-family:Helvetica-Light, Helvetica;
+        font-weight:300;
+        color:#ffffff;
+        line-height:24px;
+        margin-top:42px;
     `;
+
+
     return (
-        <div className="flex flex-row justify-between px-15 pt-6.5 ">
-            <div className="flex flex-col justify-center px-15">
+        <div className="flex flex-row justify-center pt-6.5">
+            <div className="flex flex-col justify-start" style={{ margin: 'auto 0' }}>
                 <TitleContent>Bitcoin Threshold Signature Tool</TitleContent>
                 <ContentSherpaX>Aggregation Signature technology based on Schnorr Signature, which will be used in the new cross-chain scheme of XBTC. We will develop a lightweight and fast bitcoin threshold signature tool for the ComingChat app.</ContentSherpaX></div>
-            <div className="w-106 h-112">
+            <div>
                 <img src={img} alt="" />
             </div>
         </div>

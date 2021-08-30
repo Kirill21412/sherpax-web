@@ -47,7 +47,7 @@ function Background(): React.ReactElement
         z-index: -3;
     `;
     const ChangeNetDiv2 = styled.div`
-        border-bottom: 45rem solid black;
+        border-bottom: 52rem solid black;
         border-top: 10rem solid transparent;
         position: absolute;
         z-index: -3;
@@ -65,7 +65,7 @@ function Background(): React.ReactElement
     `;
     const ChangeNetDiv4 = styled.div`
         height: 0;
-        border-bottom: 75rem solid black;
+        border-bottom: 90rem solid black;
         border-top: 23rem solid transparent;
         position: absolute;
         z-index: -2;
