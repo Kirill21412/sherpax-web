@@ -1,7 +1,7 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: sherpax-front
+  name: sherpax-web
   namespace: chainx-pre
   labels:
     app: sherpax-web
