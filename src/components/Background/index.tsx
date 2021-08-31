@@ -15,6 +15,7 @@ function ChangeSize()
         })
     }, [])
 
+
     useEffect(() =>
     {
         window.addEventListener('resize', onResize);
@@ -70,19 +71,50 @@ function Background(): React.ReactElement
         position: absolute;
         z-index: -2;
     `;
+    const ChangeNetDiv5 = styled.div`
+        height: 0;
+        border-bottom: 100rem solid black;
+        border-top: 23rem solid transparent;
+        position: absolute;
+        z-index: -2;
+`;
+
 
     const size = ChangeSize()
     useEffect(() =>
     {
         console.log(size)
     }, [size])
+
+    const [choseItem, setChoseItem] = useState(false);
+
+    const resizeFn = () =>
+    {
+        watchChangeSize();
+    }
+    window.addEventListener('resize', resizeFn)
+
+    function watchChangeSize()
+    {
+        var offsetWid = document.documentElement.clientWidth;
+        if (offsetWid <= 1000) {
+            setChoseItem(true)
+        } else {
+            setChoseItem(false)
+        }
+    }
     return (
         <>
             <ChangeNetDiv style={{ width: `${size.width}px`, borderLeft: `${size.width}px solid black` }} />
             <ChangeNetDivl style={{ width: `${size.width}px` }} />
             <ChangeNetDiv2 style={{ width: `${size.width}px`, borderRight: `${size.width}px solid black`, top: '80rem' }} />
             <ChangeNetDiv3 style={{ width: `${size.width}px`, top: '124rem' }} />
-            <ChangeNetDiv4 style={{ width: `${size.width}px`, borderRight: `${size.width}px solid black`, top: '150rem' }} />
+            {!choseItem ?
+                <ChangeNetDiv4 style={{ width: `${size.width}px`, borderRight: `${size.width}px solid black`, top: '150rem' }} />
+                :
+                <ChangeNetDiv5 style={{ width: `${size.width}px`, borderRight: `${size.width}px solid black`, top: '150rem' }} />
+            }
+
         </>
     );
 }

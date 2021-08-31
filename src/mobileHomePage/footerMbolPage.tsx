@@ -11,7 +11,7 @@ const FooterWrap = styled.div`
   align-items: center;
   background: #ffffff;
   width: 100vw;
-  height: 40vw;
+  height: 30vw;
   display: flex;
   flex-direction: column;
   padding: 6.4vw 6.267vw;
@@ -45,13 +45,13 @@ function FooterMbolPage(): React.ReactElement
         {iconList.map((item, i) =>
         {
           return (
-            <a href={item.address}>
+            <a href={item.address} key={i}>
               <img src={item.icon} alt="" />
             </a>
           );
         })}
       </IconWrap>
-      <div className="copyright">© 2019-2021 ChainX. All rights reserved.</div>
+      {/* <div className="copyright">© 2019-2021 ChainX. All rights reserved.</div> */}
       <img src={logo} alt="" className="logo" />
     </FooterWrap>
   );

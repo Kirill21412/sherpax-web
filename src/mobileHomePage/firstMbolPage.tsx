@@ -15,7 +15,7 @@ const BackBG = styled.div`
   background: #000000; 
   height: auto;
   width: 100vw;
-  padding: 3vw 0 0vw;
+  padding: 17vw 0 0vw;
   transform: skew(0deg, -10deg);
   position: relative;
   * {
@@ -57,7 +57,7 @@ const Content = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 8vw;
+    top: 14vw;
     img.bannerImg {
       position: absolute;
       width: 62.4vw;

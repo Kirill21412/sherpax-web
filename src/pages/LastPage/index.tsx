@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import img from "../../assets/img5.svg"
 import imgSherpax from "../../assets/sherpax.svg"
 import fee from "../../assets/icon_fee.svg"
@@ -7,6 +7,8 @@ import governance from "../../assets/img_governance.svg"
 import smart from "../../assets/icon_smart.svg"
 import styled from 'styled-components';
 import KsxItem from "../../components/KsxItem";
+import Item from "./Item";
+import ItemS from "./ItemS";
 
 
 
@@ -40,6 +42,31 @@ function LastPage(): React.ReactElement
         line-height: 38px;
     `;
 
+    const KsxList = styled.div`
+      &>div:nth-child(n+2){
+          border-left-width:0px;
+      }
+    `;
+
+    const [choseItem, setChoseItem] = useState(false);
+
+    const resizeFn = () =>
+    {
+        watchChangeSize();
+    }
+    window.addEventListener('resize', resizeFn)
+
+
+    function watchChangeSize()
+    {
+        var offsetWid = document.documentElement.clientWidth;
+        if (offsetWid <= 1000) {
+            setChoseItem(true)
+        } else {
+            setChoseItem(false)
+        }
+    }
+
     return (
         <>
             <div className="flex flex-row justify-center pt-30">
@@ -58,12 +85,7 @@ function LastPage(): React.ReactElement
                     <Ksx>KSX TOKEN</Ksx>
                     <div style={{ width: '100px', height: '1px', background: '#FFFFFF', margin: '1rem auto' }}></div>
                 </div>
-                <div className="flex flex-row justify-center px-15">
-                    <KsxItem ksxName="Fee" ksxContent="As a transaction gas fee on the SherpaX network" ksximage={fee}  ></KsxItem>
-                    <KsxItem ksxName="Treasury" ksxContent="Get your projects funded from the treasury." ksximage={treasury} ></KsxItem>
-                    <KsxItem ksxName="Governance" ksxContent="Empowers the community to vote, elect council members, guide the development through on-chain governance." ksximage={governance} ></KsxItem>
-                    <KsxItem ksxName="Deployment" ksxContent="Enables developers to deploy new DApps and smart contracts on SherpaX " ksximage={smart} ></KsxItem>
-                </div>
+                {choseItem ? <ItemS /> : <Item />}
             </div>
         </>
     );

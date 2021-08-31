@@ -20,7 +20,7 @@ function Footer(): React.ReactElement
             <ImgContent>
                 {list?.map((item, i) =>
                 {
-                    return (<img src={item} alt="" style={{ marginRight: "24px", width: '24px' }} />)
+                    return (<img src={item} alt="" key={i} style={{ marginRight: "24px", width: '24px' }} />)
                 })}
             </ImgContent>
             <img src={logo} alt="" style={{ width: "126px", height: '29px' }} />
