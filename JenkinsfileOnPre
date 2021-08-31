@@ -8,7 +8,7 @@ pipeline {
     DOCKER_CREDENTIAL_ID = 'dockerhub-id'
     KUBECONFIG_CREDENTIAL_ID = 'admin'
     REGISTRY = 'docker.io'
-    DOCKERHUB_NAMESPACE = 'chainx'
+    DOCKERHUB_NAMESPACE = 'chainxorg'
     APP_NAME = 'sherpax-web'
   }
   
