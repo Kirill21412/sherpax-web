@@ -21,6 +21,7 @@ body {
 }
 .bm-menu-wrap{
   width:66.7vw !important;
+  top:0rem !important;
 }
 .bm-item {
   display: inline-block;
@@ -38,10 +39,10 @@ body {
 
 .bm-burger-button {
   position: fixed;
-  width: 36px;
-  height: 30px;
-  right: 36px;
-  top: 36px;
+  width: 35px;
+  height: 35px;
+  right: 22px;
+  top: 2vh;
 }
 
 /* Color/shape of burger icon bars */
@@ -79,6 +80,7 @@ body {
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
+  overflow:hidden;
 }
 
 /* Styling of overlay */

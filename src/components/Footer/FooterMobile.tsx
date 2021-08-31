@@ -31,7 +31,7 @@ function Footer(): React.ReactElement
             <ImgContent>
                 {list?.map((item, index) =>
                 {
-                    return (<img src={item} alt="" style={{ marginRight: `${index === list.length - 1 ? '' : '7.8vw'}`, width: '8vw' }} />)
+                    return (<img src={item} key={index} alt="" style={{ marginRight: `${index === list.length - 1 ? '' : '7.8vw'}`, width: '8vw' }} />)
                 })}
             </ImgContent>
             {/* <Version>

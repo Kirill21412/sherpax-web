@@ -72,7 +72,7 @@ function FirstPage(): React.ReactElement
 
     return (
         <>
-            <div className="flex flex-row justify-center mr-96" >
+            <div className="flex flex-row justify-between ml-12" >
                 <div className="flex flex-col ">
                     <SherpaXTitle className="pt-28 w-148">SherpaX Crowdloan Has Started</SherpaXTitle>
                     <ContentDiv className="py-12">SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other</ContentDiv>
@@ -84,7 +84,7 @@ function FirstPage(): React.ReactElement
                     <img src={circle} alt="" style={{ width: '100%', height: 'auto' }} />
                 </Bgcontent>
             </div>
-            <JoinDiv className="mt-22.5 ml-28">
+            <JoinDiv className="mt-22.5 ml-12">
                 <JoinSpan><a href="https://ksmslot.chainx.cc/" target="_black">Join</a></JoinSpan>
             </JoinDiv>
         </>

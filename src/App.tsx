@@ -2,13 +2,10 @@ import React, { useState, useEffect } from "react";
 import HomePage from "./pages/HomePage/index";
 import MobileHomePage from "./mobileHomePage/index";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 
 const App: React.FC = () =>
 {
-  const { i18n } = useTranslation();
   const [paltform, setPlatform] = useState(true)
-  const language = i18n.language;
   const [isIOS, setIsIOS] = useState<boolean>(false);
   const [isAndroid, setIsAndroid] = useState<boolean>(false);
   const [isSafari, setIsSafari] = useState<boolean>(false);
@@ -43,7 +40,7 @@ const App: React.FC = () =>
   function watchChangeSize()
   {
     var offsetWid = document.documentElement.clientWidth;
-    if (offsetWid < 900) {
+    if (offsetWid <= 750) {
       setMiniScreen(true)
     } else {
       setMiniScreen(false)

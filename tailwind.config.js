@@ -313,10 +313,6 @@ module.exports = {
         indexBg: "url('./src/assets/background.png')",
       }),
     },
-    screens: {
-      screen: { min: "374px", max: "779px" },
-      desktop: { min: "780px" },
-    },
     bottom: {
       28: '28vh'
     },

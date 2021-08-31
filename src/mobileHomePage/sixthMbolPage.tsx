@@ -92,7 +92,7 @@ function SixthPage(): React.ReactElement
         {cellList.map((item: cellListItem, i) =>
         {
           return (
-            <Cell>
+            <Cell key={i}>
               <h1>{item.title}</h1>
               <div className="content">{item.content}</div>
               <img src={item.picture} alt="" className="image" />

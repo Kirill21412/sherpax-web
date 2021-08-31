@@ -16,19 +16,38 @@ function Home(): React.ReactElement
         margin: 0 auto;
         max-width:1280px;
         position: relative;
-        @media screen and (min-width: 1366px){
-            width: 1280px
-        }
-        @media screen and (min-width: 1600px){
-            width: 1500px
-        }
-        @media screen and (min-width: 1800px){
-            width: 1700px
-        }
-        @media screen and (min-width: 1920px){
-            width: calc(100% - 80px)
-        }
     `;
+
+    const FooterBox = styled.div`
+        position:absolute;
+        z-index: 10;
+        width: 100%;
+        top: 262rem;
+    `;
+    const FooterBoxS = styled.div`
+        position:absolute;
+        z-index: 10;
+        width: 100%;
+        top: 252rem;
+    `;
+    const [choseItem, setChoseItem] = useState(false);
+
+    const resizeFn = () =>
+    {
+        watchChangeSize();
+    }
+    window.addEventListener('resize', resizeFn)
+
+
+    function watchChangeSize()
+    {
+        var offsetWid = document.documentElement.clientWidth;
+        if (offsetWid <= 1000) {
+            setChoseItem(true)
+        } else {
+            setChoseItem(false)
+        }
+    }
     return (
         <>
             <Header />
@@ -40,9 +59,12 @@ function Home(): React.ReactElement
                 <FourthPage />
                 <LastPage />
             </FitMedia>
-            <div style={{ position: 'absolute', zIndex: 10, top: '254.2rem', width: '100%' }}>
+            {choseItem ? <FooterBox >
                 <Footer />
-            </div>
+            </FooterBox> : <FooterBoxS >
+                <Footer />
+            </FooterBoxS>}
+
         </>
     );
 }
