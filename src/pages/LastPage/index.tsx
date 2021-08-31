@@ -1,12 +1,6 @@
 import React, { useState } from "react";
-import img from "../../assets/img5.svg"
-import imgSherpax from "../../assets/sherpax.svg"
-import fee from "../../assets/icon_fee.svg"
-import treasury from "../../assets/icon_treasury.svg"
-import governance from "../../assets/img_governance.svg"
-import smart from "../../assets/icon_smart.svg"
+import img from "../../assets/img5.svg";
 import styled from 'styled-components';
-import KsxItem from "../../components/KsxItem";
 import Item from "./Item";
 import ItemS from "./ItemS";
 
@@ -40,12 +34,6 @@ function LastPage(): React.ReactElement
         font-weight: bold;
         color: #FFFFFF;
         line-height: 38px;
-    `;
-
-    const KsxList = styled.div`
-      &>div:nth-child(n+2){
-          border-left-width:0px;
-      }
     `;
 
     const [choseItem, setChoseItem] = useState(false);

@@ -6,6 +6,7 @@ import medium from "../../assets/medium.svg"
 import telegram from "../../assets/telegram.svg"
 import twitter from "../../assets/twitter.svg"
 import wechat from "../../assets/wechat.svg"
+import wechatImg from "../../assets/wechatImg.png"
 import styled from 'styled-components';
 function Footer(): React.ReactElement
 {
@@ -13,15 +14,58 @@ function Footer(): React.ReactElement
     const ImgContent = styled.div`
         display:flex;
         flex-direction:row;
+        .wechatimg{
+            cursor: pointer;
+        }
+        
+        #wechatHover img{
+        display:none;
+        }
+
+        #idd {
+            position: absolute;
+            left: 17rem; //位置和大小自己定义
+            top: 2rem; 
+            width: 100px; 
+            height: 300px;
+            cursor: pointer;//cursor即鼠标悬浮时鼠标样式,pointer为小手
+           }
+        #idd img{
+           display:none;
+        }
+        #idd:hover img{
+           display:block;
+           }
     `;
-    const list = [email, github, medium, telegram, twitter, wechat]
+
     return (
         <div className="flex flex-row justify-between bg-topBar-white px-15 mt-29 py-5">
             <ImgContent>
-                {list?.map((item, i) =>
-                {
-                    return (<img src={item} alt="" key={i} style={{ marginRight: "24px", width: '24px' }} />)
-                })}
+                <a href="hi@chainx.org" target="_black">
+                    <img src={email} alt="" style={{ marginRight: "24px", width: '24px' }} />
+                </a>
+                <a href="https://github.com/chainx-org/sherpax-web" target="_black">
+                    <img src={github} alt="" style={{ marginRight: "24px", width: '24px' }} />
+                </a>
+                <a href="https://chainx-org.medium.com/" target="_black">
+                    <img src={medium} alt="" style={{ marginRight: "24px", width: '24px' }} />
+                </a>
+                <a href="https://t.me/chainx_org" target="_black">
+                    <img src={telegram} alt="" style={{ marginRight: "24px", width: '24px' }} />
+                </a>
+                <a href="https://twitter.com/chainx_org" target="_black">
+                    <img src={twitter} alt="" style={{ marginRight: "24px", width: '24px' }} />
+                </a>
+                <div className="wechatimg">
+                    <img src={wechat} alt="" />
+                </div>
+                <div id="wechatHover">
+                    <img src={wechatImg} alt="" />
+                </div>
+                <div id="idd">
+                    <img src={wechatImg} />
+                </div>
+
             </ImgContent>
             <img src={logo} alt="" style={{ width: "126px", height: '29px' }} />
         </div>
@@ -29,3 +73,4 @@ function Footer(): React.ReactElement
 }
 
 export default Footer;
+
