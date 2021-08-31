@@ -39,10 +39,10 @@ body {
 
 .bm-burger-button {
   position: fixed;
-  width: 7vw;
-  height: 7vh;
+  width: 6vw;
+  height: 6vh;
   right: 5vw;
-  margin-top: -6vh;
+  margin-top: -4.6vh;
 }
 
 /* Color/shape of burger icon bars */
@@ -86,7 +86,7 @@ body {
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
-  margin-top: -7vh !important;
+  margin-top: -5.7vh !important;
   margin-left: -6vw !important;
 }
 
