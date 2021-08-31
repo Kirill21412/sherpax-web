@@ -8,8 +8,8 @@ pipeline {
     DOCKER_CREDENTIAL_ID = 'dockerhub-id'
     KUBECONFIG_CREDENTIAL_ID = 'admin'
     REGISTRY = 'docker.io'
-    DOCKERHUB_NAMESPACE = 'comingweb3'
-    APP_NAME = 'coming-website-v2-pre'
+    DOCKERHUB_NAMESPACE = 'sherpax'
+    APP_NAME = 'sherpax-pre'
   }
   
   stages {
