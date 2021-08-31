@@ -59,12 +59,20 @@ function Home(): React.ReactElement
                 <FourthPage />
                 <LastPage />
             </FitMedia>
-            {choseItem ? <FooterBox >
-                <Footer />
-            </FooterBox> : <FooterBoxS >
-                <Footer />
-            </FooterBoxS>}
-
+            {choseItem ?
+                <FooterBox >
+                    <Footer />
+                </FooterBox> :
+                <FooterBoxS >
+                    <Footer />
+                </FooterBoxS>}
+            <div className={'showMessage'} style={{
+                display: 'none', position: 'fixed',
+                bottom: '5rem',
+                color: 'white',
+                width: '100%',
+                textAlign: 'left',
+            }}>Copy Successed</div>
         </>
     );
 }

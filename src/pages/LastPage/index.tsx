@@ -61,7 +61,7 @@ function LastPage(): React.ReactElement
                 <div className="flex flex-col justify-start" style={{ margin: 'auto 0' }}>
                     <TitleContent>Decentralized NFT Auction Platform</TitleContent>
                     <ContentSherpaX>
-                        ComingChat, a decentralized NFT auction platform based on smart contracts, has so far issued more than 120,000 NFT.
+                        ComingChat, a decentralized NFT auction platform based on smart contracts, has so far issued more than 120,000 NFT. Using our Auction Platform, anyone can buy or sell their NFT with ease and without middlemen.
                     </ContentSherpaX></div>
                 <div >
                     <img src={img} alt="" />

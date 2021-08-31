@@ -2,6 +2,7 @@ import React from "react";
 import bg_circle from "../../assets/bg_1.svg"
 import circle from "../../assets/img1.png"
 import styled from 'styled-components';
+import { copy } from "../../helps/copy";
 
 
 
@@ -75,7 +76,9 @@ function FirstPage(): React.ReactElement
             <div className="flex flex-row justify-between ml-12" >
                 <div className="flex flex-col ">
                     <SherpaXTitle className="pt-28 w-148">SherpaX Crowdloan Has Started</SherpaXTitle>
-                    <ContentDiv className="py-12">SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other</ContentDiv>
+                    <ContentDiv className="py-12">
+                        SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other priming them for mainstream application on ChainX.
+                    </ContentDiv>
                 </div>
                 <BgDiv>
                     <img src={bg_circle} alt="" style={{ width: '100%', height: 'auto' }} />
@@ -85,7 +88,8 @@ function FirstPage(): React.ReactElement
                 </Bgcontent>
             </div>
             <JoinDiv className="mt-22.5 ml-12">
-                <JoinSpan><a href="https://ksmslot.chainx.cc/" target="_black">Join</a></JoinSpan>
+                {/* <JoinSpan><a href="https://ksmslot.chainx.cc/" target="_black" >Join</a></JoinSpan> */}
+                <JoinSpan onClick={() => copy('join')}>Join</JoinSpan>
             </JoinDiv>
         </>
     );

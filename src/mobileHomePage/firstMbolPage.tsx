@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { copy } from "../helps/copy";
 import bannerImg from "./assets/banner.png";
 import bannerbg from "./assets/bannerbg.png";
 
@@ -90,15 +91,13 @@ function FirstPage(): React.ReactElement
           <div className="text">
             <div className="title">SherpaX Crowdloan Has Started</div>
             <div className="introduce">
-              SherpaX, an independent research and development network where
-              theoretical experiments and applicable practices integrate with
-              each other
+              SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other priming them for mainstream application on ChainX.
             </div>
           </div>
           <div className="imgwrap">
             <img src={bannerImg} alt="bannerImg" className="bannerImg" />
             <img src={bannerbg} alt="bannerbg" className="bannerbg" />
-            <button className="join"><a href="https://ksmslot.chainx.cc/" target="_black">Join</a></button>
+            <button className="join" onClick={() => copy('join')}><a href="https://ksmslot.chainx.cc/" target="_black">Join</a></button>
           </div>
         </Content>
       </BackBG>

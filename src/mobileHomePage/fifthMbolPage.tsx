@@ -22,15 +22,15 @@ const BottomTriangle = styled.div`
   bottom: -10vw;
   z-index: -1;
 `;
-function FifthPage(): React.ReactElement {
+function FifthPage(): React.ReactElement
+{
   return (
     <ContentWrap>
       <BackBG>
         <div className="container">
           <div className="title">Decentralized NFT Auction Platform</div>
           <div className="content">
-            ComingChat, a decentralized NFT auction platform based on smart
-            contracts, has so far issued more than 120,000 NFT.
+            ComingChat, a decentralized NFT auction platform based on smart contracts, has so far issued more than 120,000 NFT. Using our Auction Platform, anyone can buy or sell their NFT with ease and without middlemen.
           </div>
           <img src={nft} alt="" className="nft" />
         </div>

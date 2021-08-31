@@ -8,6 +8,8 @@ import twitter from "../../assets/twitter.svg"
 import wechat from "../../assets/wechat.svg"
 import wechatImg from "../../assets/wechatImg.png"
 import styled from 'styled-components';
+import { copy } from "../../helps/copy";
+
 function Footer(): React.ReactElement
 {
 
@@ -26,8 +28,8 @@ function Footer(): React.ReactElement
             position: absolute;
             left: 17rem; //位置和大小自己定义
             top: 2rem; 
-            width: 100px; 
-            height: 300px;
+            width: 100px;
+            height:9rem;
             cursor: pointer;//cursor即鼠标悬浮时鼠标样式,pointer为小手
            }
         #idd img{
@@ -38,12 +40,16 @@ function Footer(): React.ReactElement
            }
     `;
 
+
+
+
+
     return (
         <div className="flex flex-row justify-between bg-topBar-white px-15 mt-29 py-5">
             <ImgContent>
-                <a href="hi@chainx.org" target="_black">
+                <div id='span' onClick={() => copy('hi@chainx.org')} >
                     <img src={email} alt="" style={{ marginRight: "24px", width: '24px' }} />
-                </a>
+                </div>
                 <a href="https://github.com/chainx-org/sherpax-web" target="_black">
                     <img src={github} alt="" style={{ marginRight: "24px", width: '24px' }} />
                 </a>
