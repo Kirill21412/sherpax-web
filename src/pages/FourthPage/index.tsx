@@ -39,7 +39,7 @@ function FourthPage(): React.ReactElement
             <div className="flex flex-col justify-start">
                 <TitleContent>More Open Blockchain Network</TitleContent>
                 <ContentSherpaX>
-                    With a more open blockchain network, SherpaX developers will be able to use both Substrate - and EVM-compatible development environments. Developers familiar with EVM's development tools will be able to easily deploy their applications on top of the SherpaX network and share security with the Kusama network.
+                    With a more open blockchain network, SherpaX developers will be able to use both SherpaX Crowdloan has been starting development environments. Developers familiar with EVM's development tools will be able to easily deploy their applications on top of the SherpaX network and share security with the Kusama network.
                 </ContentSherpaX></div>
         </div>
     );
