@@ -9,7 +9,7 @@ pipeline {
     KUBECONFIG_CREDENTIAL_ID = 'admin'
     REGISTRY = 'docker.io'
     DOCKERHUB_NAMESPACE = 'chainx'
-    APP_NAME = 'sherpax-pre'
+    APP_NAME = 'sherpax-web'
   }
   
   stages {
