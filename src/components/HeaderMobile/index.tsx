@@ -28,7 +28,7 @@ function HeaderMobile(): React.ReactElement
             <MenuButtonWrapper>
                 <div style={{ position: 'fixed', top: '0', zIndex: 1000 }}>
                     <MobileBox >
-                        <img src={logo} alt="" ></img>
+                        <img src={logo} alt="" style={{ width: '24vw', height: '4vh' }}></img>
                         <MenuContent />
                     </MobileBox>
                 </div>

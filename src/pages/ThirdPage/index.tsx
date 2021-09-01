@@ -29,7 +29,7 @@ function ThirdPage(): React.ReactElement
 
     return (
         <div className="flex flex-row justify-center pt-6.5">
-            <div className="flex flex-col justify-start" style={{ margin: 'auto 0' }}>
+            <div className="flex flex-col justify-start" style={{ marginTop: '11rem' }}>
                 <TitleContent>Bitcoin Threshold Signature Tool</TitleContent>
                 <ContentSherpaX>
                     Aggregation Signature technology based on Schnorr Signature, which will be used in the new cross-chain scheme of XBTC. We will develop a lightweight and fast bitcoin threshold signature tool for the ComingChat app, enabling lightning fast XBTC transfers and DeFi applications.</ContentSherpaX></div>

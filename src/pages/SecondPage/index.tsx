@@ -11,14 +11,13 @@ function SecondPage(): React.ReactElement
         width:35.93rem;
         height:35.93rem;
         padding-left:2.625rem;
-        margin-right:2.625rem;
     `;
     const ImgBoxRight = styled.div`
         display:flex;
         flex-direction:column;
-        margin:auto 0;
+        margin-top:6rem;
         justify-content:start;
-        padding-right:2.625rem;
+        padding-right:6.625rem;
 `;
     const ImgBoxTitle = styled.div`
 //         padding-left:6.25rem;
@@ -34,7 +33,7 @@ function SecondPage(): React.ReactElement
         margin-top:42px;
   `;
     return (
-        <div className="flex flex-row pt-52">
+        <div className="flex flex-row pt-52 justify-between">
             <ImgBoxLeft>
                 <img src={img} alt="" />
             </ImgBoxLeft>
