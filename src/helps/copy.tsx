@@ -1,4 +1,3 @@
-import { message } from 'antd';
 export const copy = (url: string) =>
 {
     // alert('请复制链接\n' + url);

@@ -75,7 +75,7 @@ function FirstPage(): React.ReactElement
         <>
             <div className="flex flex-row justify-between ml-12" >
                 <div className="flex flex-col ">
-                    <SherpaXTitle className="pt-28 w-148">SherpaX Crowdloan Has Started</SherpaXTitle>
+                    <SherpaXTitle className="pt-28 w-148">SherpaX Crowdloan has been starting</SherpaXTitle>
                     <ContentDiv className="py-12">
                         SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other priming them for mainstream application on ChainX.
                     </ContentDiv>
@@ -88,8 +88,7 @@ function FirstPage(): React.ReactElement
                 </Bgcontent>
             </div>
             <JoinDiv className="mt-22.5 ml-12">
-                {/* <JoinSpan><a href="https://ksmslot.chainx.cc/" target="_black" >Join</a></JoinSpan> */}
-                <JoinSpan onClick={() => copy('join')}>Join</JoinSpan>
+                <JoinSpan><a href="https://ksmslot.chainx.cc/" target="_black" >Join</a></JoinSpan>
             </JoinDiv>
         </>
     );
