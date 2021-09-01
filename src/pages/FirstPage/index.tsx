@@ -75,7 +75,7 @@ function FirstPage(): React.ReactElement
         <>
             <div className="flex flex-row justify-between ml-12" >
                 <div className="flex flex-col ">
-                    <SherpaXTitle className="pt-28 w-148">SherpaX Crowdloan has been starting</SherpaXTitle>
+                    <SherpaXTitle className="pt-28 w-148">SherpaX Crowdloan is ongoing</SherpaXTitle>
                     <ContentDiv className="py-12">
                         SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other priming them for mainstream application on ChainX.
                     </ContentDiv>
