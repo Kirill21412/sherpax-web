@@ -89,7 +89,7 @@ function FirstPage(): React.ReactElement
       <BackBG>
         <Content>
           <div className="text">
-            <div className="title">SherpaX Crowdloan has been starting</div>
+            <div className="title">SherpaX Crowdloan is ongoing</div>
             <div className="introduce">
               SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other priming them for mainstream application on ChainX.
             </div>
