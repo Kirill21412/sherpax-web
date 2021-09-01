@@ -12,7 +12,7 @@ function HeaderMobile(): React.ReactElement
         flex-direction:row;
         justify-content:space-between;
         background:black;
-        height:9.64vh;
+        height:7.64vh;
         padding:2vh 5.33vw;
         margin:auto 0;
     `;

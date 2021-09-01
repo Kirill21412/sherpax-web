@@ -43,12 +43,7 @@ function SecondPage(): React.ReactElement
                     <img src={imgSherpax} alt="" />
                 </ImgBoxTitle>
                 <ContentSherpaX>
-                    SherpaX, functions as a guide to ChainX as Sherpas, members of an
-                    ethnic group in the Himalayas who are famous for their mountaineering
-                    skills, navigate through unknow dangers and complicated situations to
-                    guide climbers safely to the peak. Therefore, new innovative ideas and
-                    technological experiments will be first carried out on SherpaX as it
-                    bears remarkable resemblance to ChainX in terms of design.
+                    SherpaX, the canary network of ChainX, functions as a 'sherpa'. Sherpas are members of an ethnic group in the Himalayas who are famous for their mountaineering and navigation skills that guide climbers through unknown dangers and threatening situations. SherpaX will have the same responsibility and will test new innovative ideas and technological experiments first before they are elevated to ChainX.
                 </ContentSherpaX>
             </ImgBoxRight>
         </div >

@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import styled from "styled-components";
-import title from "./assets/sherpax.svg";
+import title from "./assets/sherpax.png";
 import { ContentWrap } from "./styles";
 import logo from "./assets/SherpaX logo_black.png";
 import { iconList } from "./assets/list";
+import email from "./assets/footer_email.png"
+import github from "./assets/footer_github.png"
+import medium from "./assets/footer_medium.png"
+import telegram from "./assets/footer_telegram.png"
+import twitter from "./assets/footer_twitter.png"
+import wechat from "./assets/footer_wechat.png"
+import wechatImg from "../assets/wechatImg.png"
+import { copy } from "../helps/copy";
 
 const FooterWrap = styled.div`
   display: flex;
@@ -36,22 +44,63 @@ const IconWrap = styled.div`
     height: 8vw;
   }
 `;
+const WeChatScan = styled.div`
+  position:absolute;
+  z-index:1;
+  width:20vw;
+  height:20vw;
+  bottom: 8vh;
+  left: 28.5vw;
+  &>img{
+    width:20vw;
+    height:20vw;
+  }
+`;
 
 function FooterMbolPage(): React.ReactElement
 {
+  const [showWeChat, setShowWeChat] = useState(false)
+  const fn = useCallback((e) =>
+  {
+    {
+      const dom: any = e.target
+      if (dom.className !== 'wechat') {
+        setShowWeChat(false)
+      }
+      // console.log(dom.className, e)
+    }
+  }, [])
+  useEffect(() =>
+  {
+    window.addEventListener('click', fn)
+    // return window.removeEventListener('click', fn)
+  }, [])
+
   return (
     <FooterWrap>
       <IconWrap>
-        {iconList.map((item, i) =>
-        {
-          return (
-            <a href={item.address} key={i}>
-              <img src={item.icon} alt="" />
-            </a>
-          );
-        })}
+        <div id='span' onClick={() => copy('hi@chainx.org')} >
+          <img src={email} alt="" />
+        </div>
+        <a href="https://github.com/chainx-org/sherpax-web" target="_black">
+          <img src={github} alt="" />
+        </a>
+        <a href="https://chainx-org.medium.com/" target="_black">
+          <img src={medium} alt="" />
+        </a>
+        <a href="https://t.me/chainx_org" target="_black">
+          <img src={telegram} alt="" />
+
+        </a>
+        <a href="https://twitter.com/chainx_org" target="_black">
+          <img src={twitter} alt="" />
+        </a>
+        <img src={wechat} className={'wechat'} onClick={() => setShowWeChat(true)} />
       </IconWrap>
-      {/* <div className="copyright">© 2019-2021 ChainX. All rights reserved.</div> */}
+      <div style={{ 'position': 'relative', }}>
+        {showWeChat ?
+          <WeChatScan><img className={'wechat'} src={wechatImg}></img></WeChatScan> : ""}
+      </div>
       <img src={logo} alt="" className="logo" />
     </FooterWrap>
   );

@@ -1,12 +1,6 @@
 import React, { useState } from "react";
-import img from "../../assets/img5.svg"
-import imgSherpax from "../../assets/sherpax.svg"
-import fee from "../../assets/icon_fee.svg"
-import treasury from "../../assets/icon_treasury.svg"
-import governance from "../../assets/img_governance.svg"
-import smart from "../../assets/icon_smart.svg"
+import img from "../../assets/img5.svg";
 import styled from 'styled-components';
-import KsxItem from "../../components/KsxItem";
 import Item from "./Item";
 import ItemS from "./ItemS";
 
@@ -42,12 +36,6 @@ function LastPage(): React.ReactElement
         line-height: 38px;
     `;
 
-    const KsxList = styled.div`
-      &>div:nth-child(n+2){
-          border-left-width:0px;
-      }
-    `;
-
     const [choseItem, setChoseItem] = useState(false);
 
     const resizeFn = () =>
@@ -73,7 +61,7 @@ function LastPage(): React.ReactElement
                 <div className="flex flex-col justify-start" style={{ margin: 'auto 0' }}>
                     <TitleContent>Decentralized NFT Auction Platform</TitleContent>
                     <ContentSherpaX>
-                        ComingChat, a decentralized NFT auction platform based on smart contracts, has so far issued more than 120,000 NFT.
+                        ComingChat, a decentralized NFT auction platform based on smart contracts, has so far issued more than 120,000 NFT. Using our Auction Platform, anyone can buy or sell their NFT with ease and without middlemen.
                     </ContentSherpaX></div>
                 <div >
                     <img src={img} alt="" />

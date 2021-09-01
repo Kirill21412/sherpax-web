@@ -31,6 +31,14 @@ const MobileHomePage = () =>
       <FifthPage />
       <SixthPage />
       <FooterPage />
+      <div className={'showMessage'} style={{
+        display: 'none', position: 'fixed',
+        bottom: '17vh',
+        color: 'white',
+        width: '100%',
+        textAlign: 'left',
+      }}>Copy Successed</div>
+
     </>
   );
 };

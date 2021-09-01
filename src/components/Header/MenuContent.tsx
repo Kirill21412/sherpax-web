@@ -50,7 +50,7 @@ export default (props: JSX.IntrinsicAttributes & JSX.IntrinsicClassAttributes<Me
       <MenuItem>
         <div className="flex flex-row py-5">
           <img src={icon_chainx} alt="" style={{ width: '7.2vw', height: '4.5vh', marginLeft: '5.3vw', marginRight: '5.3vw' }} />
-          <ItemName> <a href="https://www.chainx.org/zh/" target="_black">ChainX</a> </ItemName>
+          <ItemName> <a href="https://www.chainx.org/en/" target="_black">ChainX</a> </ItemName>
         </div>
       </MenuItem>
       <MenuItem>
