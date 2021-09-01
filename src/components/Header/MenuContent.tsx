@@ -55,7 +55,7 @@ export default (props: JSX.IntrinsicAttributes & JSX.IntrinsicClassAttributes<Me
       <MenuItem>
         <div className="flex flex-row py-5">
           <img src={icon_lighterpaper} alt="" style={{ width: '7.2vw', height: '4.5vh', marginLeft: '5.3vw', marginRight: '5.3vw' }} />
-          <ItemName><a href="https://www.chainx.org/static/SherpaXLightpaper-a911d010de14ad3438b832143c2b9932.pdf" target="_black">LighterPaper</a></ItemName>
+          <ItemName><a href="https://www.chainx.org/static/SherpaXLightpaper-a911d010de14ad3438b832143c2b9932.pdf" target="_black">Lightpaper</a></ItemName>
         </div>
       </MenuItem>
     </Menu>

@@ -21,7 +21,7 @@ function Home(): React.ReactElement
             <LinkAddress>
                 <span className="mx-5"> <a href="https://www.chainx.org/en/" target="_black">ChainX</a> </span>
                 <span className="mx-5"><a href="https://ksmslot.chainx.cc/" target="_black">Crowdloan</a></span>
-                <span className="ml-5"><a href="https://www.chainx.org/static/SherpaXLightpaper-a911d010de14ad3438b832143c2b9932.pdf" target="_black">LighterPaper</a></span>
+                <span className="ml-5"><a href="https://www.chainx.org/static/SherpaXLightpaper-a911d010de14ad3438b832143c2b9932.pdf" target="_black">Lightpaper</a></span>
             </LinkAddress>
 
         </div>
