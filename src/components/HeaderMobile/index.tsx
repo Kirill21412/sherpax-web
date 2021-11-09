@@ -8,15 +8,13 @@ function HeaderMobile(): React.ReactElement
 {
     const MobileBox = styled.div`
         width:100vw;
-    
-    `;
-    const LinkAddress = styled.div`
-        color: #FFFFFF;
-        height: 1rem;
-        line-height: 1rem;
-        font-size: 1rem;
-        font-family: NotoSansSC-Regular, NotoSansSC;
-        font-weight: 400;
+        position:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        background:black;
+        height:7.64vh;
+        padding:2vh 5.33vw;
+        margin:auto 0;
     `;
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -28,10 +26,12 @@ function HeaderMobile(): React.ReactElement
     return (
         <>
             <MenuButtonWrapper>
-                <MobileBox className="flex flex-row justify-between bg-topBar-black" style={{ width: '100vw', height: '5vh' }}>
-                    <img src={logo} alt="" className="px-1 py-1" />
-                    <MenuContent />
-                </MobileBox>
+                <div style={{ position: 'fixed', top: '0', zIndex: 1000 }}>
+                    <MobileBox >
+                        <img src={logo} alt="" style={{ width: '24vw', height: '4vh' }}></img>
+                        <MenuContent />
+                    </MobileBox>
+                </div>
             </MenuButtonWrapper>
         </>
     );

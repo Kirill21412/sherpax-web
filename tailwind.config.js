@@ -127,7 +127,9 @@ module.exports = {
         25: "5.75rem",
         23: "6rem",
         24: "6.875rem",
+        28: "7rem",
         29: "7.5rem",
+        96: "24rem",
         168: "42rem",
         "22-": "-5.625rem",
         "24-": "-6rem",
@@ -310,10 +312,6 @@ module.exports = {
       backgroundImage: (theme) => ({
         indexBg: "url('./src/assets/background.png')",
       }),
-    },
-    screens: {
-      screen: { min: "374px", max: "779px" },
-      desktop: { min: "780px" },
     },
     bottom: {
       28: '28vh'

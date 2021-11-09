@@ -16,52 +16,38 @@ function Home(): React.ReactElement
         margin: 0 auto;
         max-width:1280px;
         position: relative;
-        // @media screen and (min-width: 1366px){
-        //     width: 1280px
-        // }
-        // @media screen and (min-width: 1600px){
-        //     width: 1500px
-        // }
-        // @media screen and (min-width: 1800px){
-        //     width: 1700px
-        // }
-        // @media screen and (min-width: 1920px){
-        //     width: calc(100% - 80px)
-        // }
     `;
-    const [routeName, setRouteName] = useState<string>("");
-    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-    const [isIOS, setIsIOS] = useState<boolean>(false);
-    const [isAndroid, setIsAndroid] = useState<boolean>(false);
-    const [isSafari, setIsSafari] = useState<boolean>(false);
-    const [isBrowser, setIsBrowser] = useState<boolean>(true);
-    const [ua, setUa] = useState<string>("");
-    const [groupString, setGroupString] = React.useState<string>("");
-    const [inviteString, setInviteString] = useState<string>("");
-    const [isWindows, setIsWindows] = useState(false);
-    useEffect(() =>
+
+    const FooterBox = styled.div`
+        position:absolute;
+        z-index: 10;
+        width: 100%;
+        top: 262rem;
+    `;
+    const FooterBoxS = styled.div`
+        position:absolute;
+        z-index: 10;
+        width: 100%;
+        top: 252rem;
+    `;
+    const [choseItem, setChoseItem] = useState(false);
+
+    const resizeFn = () =>
     {
-        // if (isIOS || isAndroid) {
-        //   setBrowserType("MBOL");
-        // } else if (ua && !isIOS && !isAndroid) {
-        //   setBrowserType("CBOL");
-        // }
-    }, [isIOS, isAndroid, ua]);
-    useEffect(() =>
+        watchChangeSize();
+    }
+    window.addEventListener('resize', resizeFn)
+
+
+    function watchChangeSize()
     {
-        ua?.match(/windows/) && setIsWindows(true);
-    }, [ua]);
-    useEffect(() =>
-    {
-        if (typeof window !== "undefined") {
-            setUa(window.navigator.userAgent.toLowerCase());
+        var offsetWid = document.documentElement.clientWidth;
+        if (offsetWid <= 1000) {
+            setChoseItem(true)
+        } else {
+            setChoseItem(false)
         }
-    });
-    useEffect(() =>
-    {
-        ua?.match(/(iphone|ipad|ipod)/) && setIsIOS(true);
-        ua?.match(/android[\s\/]([\d\.]+)/) && setIsAndroid(true);
-    }, [ua]);
+    }
     return (
         <>
             <Header />
@@ -73,7 +59,20 @@ function Home(): React.ReactElement
                 <FourthPage />
                 <LastPage />
             </FitMedia>
-            <Footer />
+            {choseItem ?
+                <FooterBox >
+                    <Footer />
+                </FooterBox> :
+                <FooterBoxS >
+                    <Footer />
+                </FooterBoxS>}
+            <div className={'showMessage'} style={{
+                display: 'none', position: 'fixed',
+                bottom: '5rem',
+                color: 'white',
+                width: '100%',
+                textAlign: 'left',
+            }}>Copy Successed</div>
         </>
     );
 }

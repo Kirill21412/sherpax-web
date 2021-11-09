@@ -1,7 +1,8 @@
 import React from "react";
 import bg_circle from "../../assets/bg_1.svg"
-import circle from "../../assets/img1.svg"
+import circle from "../../assets/img1.png"
 import styled from 'styled-components';
+import { copy } from "../../helps/copy";
 
 
 
@@ -40,10 +41,10 @@ function FirstPage(): React.ReactElement
     const Bgcontent = styled.div`
         width:28.5rem;
         height:21.125rem;
-        top: 8.125rem;
+        top: 5.125rem;
         z-index:-1;
         position:absolute;
-        right:1rem;
+        right:4rem;
 
     `;
     const JoinDiv = styled.div`
@@ -62,13 +63,22 @@ function FirstPage(): React.ReactElement
         font-weight: bold;
         color: #FFFFFF;
     `;
+    const BgBox = styled.div`
+    width: 0px;
+    height: 0px;
+    border-color: red transparent transparent red;
+    border-width: 50px 50px 50px 50px;
+    border-style: solid;
+`;
 
     return (
-        <div className="flex flex-col justify-center">
-            <div className="flex flex-row justify-between h-105" >
+        <>
+            <div className="flex flex-row justify-between ml-12" >
                 <div className="flex flex-col ">
-                    <SherpaXTitle className="pt-28 w-148">SherpaX Crowdloan Has Started</SherpaXTitle>
-                    <ContentDiv className="py-12">SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other</ContentDiv>
+                    <SherpaXTitle className="pt-28 w-148">SherpaX Crowdloan is ongoing</SherpaXTitle>
+                    <ContentDiv className="py-12">
+                        SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other priming them for mainstream application on ChainX.
+                    </ContentDiv>
                 </div>
                 <BgDiv>
                     <img src={bg_circle} alt="" style={{ width: '100%', height: 'auto' }} />
@@ -77,10 +87,10 @@ function FirstPage(): React.ReactElement
                     <img src={circle} alt="" style={{ width: '100%', height: 'auto' }} />
                 </Bgcontent>
             </div>
-            <JoinDiv className="mt-16.8">
-                <JoinSpan><a href="https://ksmslot.chainx.cc/" target="_black">Join</a></JoinSpan>
+            <JoinDiv className="mt-29 ml-12">
+                <JoinSpan><a href="https://ksmslot.chainx.cc/" target="_black" >Join</a></JoinSpan>
             </JoinDiv>
-        </div>
+        </>
     );
 }
 

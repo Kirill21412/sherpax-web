@@ -21,6 +21,7 @@ body {
 }
 .bm-menu-wrap{
   width:66.7vw !important;
+  top:0rem !important;
 }
 .bm-item {
   display: inline-block;
@@ -38,10 +39,10 @@ body {
 
 .bm-burger-button {
   position: fixed;
-  width: 36px;
-  height: 30px;
-  right: 36px;
-  top: 36px;
+  width: 5vw;
+  height: 5vh;
+  right: 5.5vw;
+  margin-top: -4.3vh;
 }
 
 /* Color/shape of burger icon bars */
@@ -79,11 +80,14 @@ body {
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
+  overflow:hidden;
 }
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.8);
+  margin-top: -5.7vh !important;
+  margin-left: -6vw !important;
 }
 
 `;

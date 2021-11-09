@@ -15,7 +15,7 @@ export default (props: JSX.IntrinsicAttributes & JSX.IntrinsicClassAttributes<Me
     margin-bottom: 2.25vh;
     margin-left: 5.3vw;
     width: 24.5vw;
-    height:3.5vh;  
+    height:3.5vh;
   `;
 
   const MenuItem = styled.div`
@@ -28,20 +28,13 @@ export default (props: JSX.IntrinsicAttributes & JSX.IntrinsicClassAttributes<Me
   `;
 
   const ItemName = styled.div`
-    height: 3.58vh;
-    font-size: 4.8vw;
+    height: 3vh;
+    font-size: 16px;
     font-family: Helvetica;
     color: #212121;
     line-height: 5vh;
   `;
 
-  const BootomSpan = styled.div`
-    height: 2vh;
-    font-size: 1.67vh;
-    font-family: Helvetica;
-    color: #000000;
-    line-height: 2vh;
-  `;
   return (
     <Menu right  {...props} customBurgerIcon={< img src={more} />} customCrossIcon={< img src={close} />}>
       <LogoDiv >
@@ -50,7 +43,7 @@ export default (props: JSX.IntrinsicAttributes & JSX.IntrinsicClassAttributes<Me
       <MenuItem>
         <div className="flex flex-row py-5">
           <img src={icon_chainx} alt="" style={{ width: '7.2vw', height: '4.5vh', marginLeft: '5.3vw', marginRight: '5.3vw' }} />
-          <ItemName> <a href="https://www.chainx.org/zh/" target="_black">ChainX</a> </ItemName>
+          <ItemName> <a href="https://www.chainx.org/en/" target="_black">ChainX</a> </ItemName>
         </div>
       </MenuItem>
       <MenuItem>
@@ -62,12 +55,9 @@ export default (props: JSX.IntrinsicAttributes & JSX.IntrinsicClassAttributes<Me
       <MenuItem>
         <div className="flex flex-row py-5">
           <img src={icon_lighterpaper} alt="" style={{ width: '7.2vw', height: '4.5vh', marginLeft: '5.3vw', marginRight: '5.3vw' }} />
-          <ItemName><a href="https://www.chainx.org/static/SherpaX-9f87b1b0f2819f7b2e718cbb84e0781b.pdf" target="_black">LighterPaper</a></ItemName>
+          <ItemName><a href="https://www.chainx.org/static/SherpaXLightpaper-a911d010de14ad3438b832143c2b9932.pdf" target="_black">Lightpaper</a></ItemName>
         </div>
       </MenuItem>
-      {/* <BootomSpan>
-        © 2019-2021 ChainX. All rights reserved.
-      </BootomSpan> */}
     </Menu>
   );
 };

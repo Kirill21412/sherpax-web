@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { copy } from "../helps/copy";
 import bannerImg from "./assets/banner.png";
 import bannerbg from "./assets/bannerbg.png";
 
@@ -12,10 +13,10 @@ const TopTriangle = styled.div`
 `;
 
 const BackBG = styled.div`
-  background: #000000;
+  background: #000000; 
   height: auto;
   width: 100vw;
-  padding: 3vw 0 0vw;
+  padding: 17vw 0 0vw;
   transform: skew(0deg, -10deg);
   position: relative;
   * {
@@ -57,7 +58,7 @@ const Content = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 8vw;
+    top: 14vw;
     img.bannerImg {
       position: absolute;
       width: 62.4vw;
@@ -88,17 +89,15 @@ function FirstPage(): React.ReactElement
       <BackBG>
         <Content>
           <div className="text">
-            <div className="title">SherpaX Crowdloan Has Started</div>
+            <div className="title">SherpaX Crowdloan is ongoing</div>
             <div className="introduce">
-              SherpaX, an independent research and development network where
-              theoretical experiments and applicable practices integrate with
-              each other
+              SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other priming them for mainstream application on ChainX.
             </div>
           </div>
           <div className="imgwrap">
             <img src={bannerImg} alt="bannerImg" className="bannerImg" />
             <img src={bannerbg} alt="bannerbg" className="bannerbg" />
-            <button className="join"><a href="https://ksmslot.chainx.cc/" target="_black">Join</a></button>
+            <button className="join" onClick={() => copy('join')}><a href="https://ksmslot.chainx.cc/" target="_black">Join</a></button>
           </div>
         </Content>
       </BackBG>
