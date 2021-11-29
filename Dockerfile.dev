@@ -4,7 +4,7 @@ WORKDIR /opt/web
 # build 命令，具体自定义自己的应用程序build步骤
 COPY . ./
 RUN yarn install
-ENV REACT_APP_API_ENV=prod
+ENV REACT_APP_API_ENV=pre
 RUN yarn build;
 
 # docker in docker 安装nginx镜像暴露80端口
@@ -21,7 +21,7 @@ RUN curl -L  http://gosspublic.alicdn.com/ossutil/1.7.3/ossutil64 -o ossutil64 &
   mv ossutil64 /usr/local/bin
 
 COPY ./nginx.config /etc/nginx/nginx.template
-ENV REACT_APP_API_ENV=prod
+ENV REACT_APP_API_ENV=pre
 CMD ["/bin/sh", "-c", "envsubst < /etc/nginx/nginx.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"]
 
 # 将build后的产物移动到nginx

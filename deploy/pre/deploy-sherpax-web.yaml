@@ -31,13 +31,11 @@ spec:
             - name: http-main
               containerPort: 80
               protocol: TCP
-          envFrom:
-            - configMapRef:
-                name: aws-config
+          
           resources: {}
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst

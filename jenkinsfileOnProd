@@ -1,3 +1,4 @@
+
 pipeline {
   agent {
     node {
@@ -8,15 +9,19 @@ pipeline {
     DOCKER_CREDENTIAL_ID = 'dockerhub-id'
     KUBECONFIG_CREDENTIAL_ID = 'admin'
     REGISTRY = 'docker.io'
-    DOCKERHUB_NAMESPACE = 'comingweb3'
-    APP_NAME = 'coming-website-v2-prod'
+    DOCKERHUB_NAMESPACE = 'chainxorg'
+    APP_NAME = 'sherpax-web-prod'
   }
-  
+  parameters {
+    string(name: 'BRANCH_NAME', defaultValue: 'main', description: '')
+  }
+
+
   stages {
 
     stage('拉取代码') {
       steps {
-        git(branch: 'main', url: 'https://github.com/coming-chat/coming-website-v2', credentialsId: 'github-id', changelog: true, poll: false)
+        git(branch: 'main', url: 'https://github.com/chainx-org/sherpax-web.git', credentialsId: 'github-id', changelog: true, poll: false)
       }
     }
 
@@ -45,7 +50,8 @@ pipeline {
                 variable: 'KUBECONFIG')
               ])
               {
-                sh 'envsubst <  deploy/prod/deploy-coming-website-v2.yaml | kubectl apply -f -'
+                sh 'envsubst <  deploy/prod/deploy-sherpax-web.yaml | kubectl apply -f -'
+
               }
             }
 
@@ -57,3 +63,4 @@ pipeline {
 
   }
 }
+  
