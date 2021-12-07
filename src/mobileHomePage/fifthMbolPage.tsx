@@ -30,7 +30,8 @@ function FifthPage(): React.ReactElement
         <div className="container">
           <div className="title">Decentralized NFT Auction Platform</div>
           <div className="content">
-            ComingChat is a meta-universe platform that integrates private social networking, a crypto wallet, decentralized digital identity, Dapps and NFT creation and auction. ComingChat has so far issued more than 120,000 NFT. SherpaX launches the CID NFT Auction platform.
+            ComingChat is a metaverse platform that integrates private social networking, a crypto wallet, decentralized digital identity, DApps and NFT creation and auction. ComingChat has so far issued more than 1,200,000 NFT. SherpaX launches the CID NFT Marketplace "Comfuture".
+
           </div>
           <img src={nft} alt="" className="nft" />
         </div>
