@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { copy } from "../helps/copy";
+import {copy} from "../helps/copy";
 import bannerImg from "./assets/banner.png";
 import bannerbg from "./assets/bannerbg.png";
 
@@ -13,12 +13,13 @@ const TopTriangle = styled.div`
 `;
 
 const BackBG = styled.div`
-  background: #000000; 
+  background: #000000;
   height: auto;
   width: 100vw;
   padding: 17vw 0 0vw;
   transform: skew(0deg, -10deg);
   position: relative;
+
   * {
     text-align: center;
   }
@@ -26,10 +27,12 @@ const BackBG = styled.div`
 
 const Content = styled.div`
   transform: skew(0deg, 10deg);
+
   div.text {
     height: 0vw;
     padding: 0 5vw;
   }
+
   .title {
     width: 100%;
     margin: 3vw auto 1vw;
@@ -42,33 +45,39 @@ const Content = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
   .introduce {
     color: #ffffff;
     font-weight: 200;
     font-size: 3.733vw;
     line-height: 5.6vw;
   }
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   div.imgwrap {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 14vw;
+    top: 20vw;
+
     img.bannerImg {
       position: absolute;
       width: 62.4vw;
       height: 60.267vw;
     }
+
     img.bannerbg {
       position: relative;
       width: 100vw;
       height: auto;
     }
+
     button.join {
       position: absolute;
       bottom: 0;
@@ -81,28 +90,32 @@ const Content = styled.div`
     }
   }
 `;
-function FirstPage(): React.ReactElement
-{
-  return (
-    <>
-      <TopTriangle></TopTriangle>
-      <BackBG>
-        <Content>
-          <div className="text">
-            <div className="title">SherpaX Crowdloan is ongoing</div>
-            <div className="introduce">
-              SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other priming them for mainstream application on ChainX.
-            </div>
-          </div>
-          <div className="imgwrap">
-            <img src={bannerImg} alt="bannerImg" className="bannerImg" />
-            <img src={bannerbg} alt="bannerbg" className="bannerbg" />
-            <button className="join" onClick={() => copy('join')}><a href="https://ksmslot.chainx.cc/" target="_black">Join</a></button>
-          </div>
-        </Content>
-      </BackBG>
-    </>
-  );
+
+function FirstPage(): React.ReactElement {
+	return (
+		<>
+			<TopTriangle></TopTriangle>
+			<BackBG>
+				<Content>
+					<div className="text">
+						<div className="title">SherpaX Crowdloan is ongoing</div>
+						<div className="introduce">
+							SherpaX, an independent research and development network where theoretical experiments and applicable
+							practices integrate with each other priming them for mainstream application on ChainX.
+						</div>
+					</div>
+					<div className="imgwrap">
+						<img src={bannerImg} alt="bannerImg" className="bannerImg"/>
+						<img src={bannerbg} alt="bannerbg" className="bannerbg"/>
+						<button className="join" onClick={() => copy('join')} style={{visibility:'hidden'}}>
+              {/*<a href="https://ksmslot.chainx.cc/"*/}
+						  {/*                                                       target="_black">Join</a>*/}
+            </button>
+					</div>
+				</Content>
+			</BackBG>
+		</>
+	);
 }
 
 export default FirstPage;

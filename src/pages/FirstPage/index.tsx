@@ -87,8 +87,7 @@ function FirstPage(): React.ReactElement
                     <img src={circle} alt="" style={{ width: '100%', height: 'auto' }} />
                 </Bgcontent>
             </div>
-            <JoinDiv className="mt-29 ml-12">
-                <JoinSpan><a href="https://ksmslot.chainx.cc/" target="_black" >Join</a></JoinSpan>
+            <JoinDiv className="mt-29 ml-12" style={{visibility:'hidden'}}>
             </JoinDiv>
         </>
     );
