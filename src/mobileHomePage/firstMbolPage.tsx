@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {copy} from "../helps/copy";
-import bannerImg from "./assets/banner.png";
+import bannerImg from "./assets/banner.svg";
 import bannerbg from "./assets/bannerbg.png";
 
 const TopTriangle = styled.div`
@@ -98,7 +98,7 @@ function FirstPage(): React.ReactElement {
 			<BackBG>
 				<Content>
 					<div className="text">
-						<div className="title">SherpaX Crowdloan is ongoing</div>
+						<div className="title">ChainX's Canary Netw</div>
 						<div className="introduce">
 							SherpaX, an independent research and development network where theoretical experiments and applicable
 							practices integrate with each other priming them for mainstream application on ChainX.
