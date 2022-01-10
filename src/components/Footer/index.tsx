@@ -47,30 +47,30 @@ function Footer(): React.ReactElement
     return (
         <div className="flex flex-row justify-between bg-topBar-white px-15 mt-29 py-5">
             <ImgContent>
-                <div id='span' onClick={() => copy('hi@chainx.org')} >
+                <div id='span' onClick={() => copy('sherpaxcrowdloan@gmail.com')} >
                     <img src={email} alt="" style={{ marginRight: "24px", width: '24px' }} />
                 </div>
                 <a href="https://github.com/chainx-org/sherpax-web" target="_black">
                     <img src={github} alt="" style={{ marginRight: "24px", width: '24px' }} />
                 </a>
-                <a href="https://chainx-org.medium.com/" target="_black">
+                <a href="https://medium.com/@sherpax/" target="_black">
                     <img src={medium} alt="" style={{ marginRight: "24px", width: '24px' }} />
                 </a>
-                <a href="https://t.me/chainx_org" target="_black">
+                <a href="https://t.me/+PC1SS7aE7a45ZWE1" target="_black">
                     <img src={telegram} alt="" style={{ marginRight: "24px", width: '24px' }} />
                 </a>
-                <a href="https://twitter.com/chainx_org" target="_black">
+                <a href="https://twitter.com/SherpaX_DAO" target="_black">
                     <img src={twitter} alt="" style={{ marginRight: "24px", width: '24px' }} />
                 </a>
-                <div className="wechatimg">
-                    <img src={wechat} alt="" />
-                </div>
-                <div id="wechatHover">
-                    <img src={wechatImg} alt="" />
-                </div>
-                <div id="idd">
-                    <img src={wechatImg} />
-                </div>
+                {/*<div className="wechatimg">*/}
+                {/*    <img src={wechat} alt="" />*/}
+                {/*</div>*/}
+                {/*<div id="wechatHover">*/}
+                {/*    <img src={wechatImg} alt="" />*/}
+                {/*</div>*/}
+                {/*<div id="idd">*/}
+                {/*    <img src={wechatImg} />*/}
+                {/*</div>*/}
 
             </ImgContent>
             <img src={logo} alt="" style={{ width: "126px", height: '29px' }} />
