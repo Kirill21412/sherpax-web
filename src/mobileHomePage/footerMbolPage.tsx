@@ -79,28 +79,28 @@ function FooterMbolPage(): React.ReactElement
   return (
     <FooterWrap>
       <IconWrap>
-        <div id='span' onClick={() => copy('hi@chainx.org')} >
+        <div id='span' onClick={() => copy('sherpaxcrowdloan@gmail.com')} >
           <img src={email} alt="" />
         </div>
         <a href="https://github.com/chainx-org/sherpax-web" target="_black">
           <img src={github} alt="" />
         </a>
-        <a href="https://chainx-org.medium.com/" target="_black">
+        <a href="https://medium.com/@sherpax" target="_black">
           <img src={medium} alt="" />
         </a>
-        <a href="https://t.me/chainx_org" target="_black">
+        <a href="https://t.me/+PC1SS7aE7a45ZWE1" target="_black">
           <img src={telegram} alt="" />
 
         </a>
-        <a href="https://twitter.com/chainx_org" target="_black">
+        <a href="https://twitter.com/SherpaX_DAO" target="_black">
           <img src={twitter} alt="" />
         </a>
-        <img src={wechat} className={'wechat'} onClick={() => setShowWeChat(true)} />
+        {/*<img src={wechat} className={'wechat'} onClick={() => setShowWeChat(true)} />*/}
       </IconWrap>
-      <div style={{ 'position': 'relative', }}>
-        {showWeChat ?
-          <WeChatScan><img className={'wechat'} src={wechatImg}></img></WeChatScan> : ""}
-      </div>
+      {/*<div style={{ 'position': 'relative', }}>*/}
+      {/*  {showWeChat ?*/}
+      {/*    <WeChatScan><img className={'wechat'} src={wechatImg}></img></WeChatScan> : ""}*/}
+      {/*</div>*/}
       <img src={logo} alt="" className="logo" />
     </FooterWrap>
   );
