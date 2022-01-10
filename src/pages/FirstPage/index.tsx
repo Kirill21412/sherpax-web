@@ -1,6 +1,6 @@
 import React from "react";
 import bg_circle from "../../assets/bg_1.svg"
-import circle from "../../assets/img1.png"
+import circle from "../../assets/img1.svg"
 import styled from 'styled-components';
 import { copy } from "../../helps/copy";
 
@@ -75,7 +75,7 @@ function FirstPage(): React.ReactElement
         <>
             <div className="flex flex-row justify-between ml-12" >
                 <div className="flex flex-col ">
-                    <SherpaXTitle className="pt-28 w-148">SherpaX Crowdloan is ongoing</SherpaXTitle>
+                    <SherpaXTitle className="pt-28 w-148">ChainX's Canary Network</SherpaXTitle>
                     <ContentDiv className="py-12">
                         SherpaX, an independent research and development network where theoretical experiments and applicable practices integrate with each other priming them for mainstream application on ChainX.
                     </ContentDiv>
