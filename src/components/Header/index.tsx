@@ -18,7 +18,7 @@ function Home(): React.ReactElement
 	`;
 	const linkList = [{name: 'ChainX', url: 'https://www.chainx.org/en/'}, {
 		name: 'Wallet',
-		url: 'https://sherpax.chainx.org/'
+		url: 'https://wallet.sherpax.io/'
 	}, {name: 'Scan', url: 'https://sherpaxscan.chainx.org/'}, {
 		name: 'Lightpaper',
 		url: 'https://singapore-chainx.oss-ap-southeast-1.aliyuncs.com/chainx.org/Chainx.pdf?versionId=CAEQDxiBgICllPel6xciIDUyMWMzNzk0ZjgzNzRjY2ZiNzRlYzNkYTEyZGUwNzNk'
