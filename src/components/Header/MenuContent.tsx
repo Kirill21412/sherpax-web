@@ -35,29 +35,22 @@ export default (props: JSX.IntrinsicAttributes & JSX.IntrinsicClassAttributes<Me
     line-height: 5vh;
   `;
 
+  const linkList = [{name:'ChainX',url:'https://www.chainx.org/en/'},{name:'Wallet',url:'https://sherpax.chainx.org/'},{name:'Scan',url:'https://sherpaxscan.chainx.org/'},{name:'Lightpaper',url:'https://singapore-chainx.oss-ap-southeast-1.aliyuncs.com/chainx.org/Chainx.pdf?versionId=CAEQDxiBgICllPel6xciIDUyMWMzNzk0ZjgzNzRjY2ZiNzRlYzNkYTEyZGUwNzNk'}]
+
+
   return (
     <Menu right  {...props} customBurgerIcon={< img src={more} />} customCrossIcon={< img src={close} />}>
       <LogoDiv >
         <img src={logo} alt="" />
       </LogoDiv>
-      <MenuItem>
-        <div className="flex flex-row py-5">
-          <img src={icon_chainx} alt="" style={{ width: '7.2vw', height: '4.5vh', marginLeft: '5.3vw', marginRight: '5.3vw' }} />
-          <ItemName> <a href="https://www.chainx.org/en/" target="_black">ChainX</a> </ItemName>
-        </div>
-      </MenuItem>
-      <MenuItem>
-        <div className="flex flex-row py-5">
-          <img src={icon_crowdloan} alt="" style={{ width: '7.2vw', height: '4.5vh', marginLeft: '5.3vw', marginRight: '5.3vw' }} />
-          <ItemName><a href="https://ksmslot.chainx.cc/" target="_black">Crowdloan</a></ItemName>
-        </div>
-      </MenuItem>
-      <MenuItem>
-        <div className="flex flex-row py-5">
-          <img src={icon_lighterpaper} alt="" style={{ width: '7.2vw', height: '4.5vh', marginLeft: '5.3vw', marginRight: '5.3vw' }} />
-          <ItemName><a href="https://singapore-chainx.oss-ap-southeast-1.aliyuncs.com/chainx.org/Chainx.pdf?versionId=CAEQDxiBgICllPel6xciIDUyMWMzNzk0ZjgzNzRjY2ZiNzRlYzNkYTEyZGUwNzNk" target="_black">Lightpaper</a></ItemName>
-        </div>
-      </MenuItem>
+      {linkList.map((item)=>{
+        return(<MenuItem>
+          <div className="flex flex-row py-5">
+            <img src={icon_chainx} alt="" style={{ width: '7.2vw', height: '4.5vh', marginLeft: '5.3vw', marginRight: '5.3vw' }} />
+            <ItemName> <a href={item.url} target="_black">{item.name}</a> </ItemName>
+          </div>
+        </MenuItem>)
+      })}
     </Menu>
   );
 };
