@@ -5,14 +5,12 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 
 const App: React.FC = () =>
 {
-  const [paltform, setPlatform] = useState(true)
   const [isIOS, setIsIOS] = useState<boolean>(false);
   const [isAndroid, setIsAndroid] = useState<boolean>(false);
-  const [isSafari, setIsSafari] = useState<boolean>(false);
-  const [isBrowser, setIsBrowser] = useState<boolean>(true);
+  const [, setIsSafari] = useState<boolean>(false);
+  const [, setIsBrowser] = useState<boolean>(true);
   const [ua, setUa] = useState<string>("");
-  const [groupString, setGroupString] = React.useState<string>("");
-  const [isWindows, setIsWindows] = useState(false);
+  const [, setIsWindows] = useState(false);
   const [miniScreen, setMiniScreen] = useState(false)
   useEffect(() =>
   {
