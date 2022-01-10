@@ -98,7 +98,7 @@ function FirstPage(): React.ReactElement {
 			<BackBG>
 				<Content>
 					<div className="text">
-						<div className="title">ChainX's Canary Netw</div>
+						<div className="title">ChainX's Canary Networkork</div>
 						<div className="introduce">
 							SherpaX, an independent research and development network where theoretical experiments and applicable
 							practices integrate with each other priming them for mainstream application on ChainX.
