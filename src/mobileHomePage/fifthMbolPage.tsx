@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { ContentWrap } from "./styles";
-import nft from "./assets/nft.png";
+import nft from "./assets/nft.svg";
 
 const BackBG = styled.div`
   position: relative;
@@ -30,7 +30,7 @@ function FifthPage(): React.ReactElement
         <div className="container">
           <div className="title">Decentralized NFT Auction Platform</div>
           <div className="content">
-            ComingChat is a metaverse platform that integrates private social networking, a crypto wallet, decentralized digital identity, DApps and NFT creation and auction. ComingChat has so far issued more than 1,200,000 NFT. SherpaX launches the CID NFT Marketplace "Comfuture".
+            ComingChat is a metaverse platform that integrates private social networking, a crypto wallet, decentralized digital identity, DApps and NFT creation and auction. ComingChat has so far issued more than 1,800,000 NFT. SherpaX launches the CID NFT Marketplace "Comfuture".
 
           </div>
           <img src={nft} alt="" className="nft" />

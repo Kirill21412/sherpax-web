@@ -128,11 +128,9 @@
             <stop stop-color="#B6E9FF" stop-opacity="0" offset="0%"></stop>
             <stop stop-color="#B900BB" offset="100%"></stop>
         </linearGradient>
-        <linearGradient x1="35.3528476%" y1="31.7094512%" x2="66.1252012%" y2="68.2905488%" id="linearGradient-31">
-            <stop stop-color="#FF4D73" offset="0%"></stop>
-            <stop stop-color="#D4067D" offset="31.6532271%"></stop>
-            <stop stop-color="#D439CF" offset="74.2723819%"></stop>
-            <stop stop-color="#A600B3" offset="100%"></stop>
+        <linearGradient x1="90.6807955%" y1="33.0761898%" x2="50%" y2="68.2905488%" id="linearGradient-31">
+            <stop stop-color="#AE04CA" offset="0%"></stop>
+            <stop stop-color="#E00666" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="50.0056739%" y1="56.761991%" x2="50%" y2="43.238009%" id="linearGradient-32">
             <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
