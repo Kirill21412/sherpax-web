@@ -20,7 +20,7 @@ function FourthPage(): React.ReactElement
         <div className="container">
           <div className="title">More Open Blockchain Network</div>
           <div className="content">
-            With a more open blockchain network, SherpaX developers will be able to use both EVM and WASM to create DeFi applications. Developers familiar with EVM's development tools will be able to easily deploy their applications on top of the SherpaX network and share security with the Kusama network.
+            With a more open blockchain network, SherpaX developers will be able to use both EVM and WASM to create DeFi applications. Developers familiar with EVM's development tools will be able to easily deploy their applications on top of the SherpaX network.
           </div>
           <img src={share} alt="" className="share" />
         </div>
