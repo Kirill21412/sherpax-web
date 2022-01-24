@@ -38,8 +38,8 @@ export default (props: JSX.IntrinsicAttributes & JSX.IntrinsicClassAttributes<Me
   const linkList = [
       {name:'ChainX',icon:chainxIcon,url:'https://www.chainx.org/en/'},
     {name:'Wallet',icon:walletIcon,url:'https://wallet.sherpax.io/'},
-    {name:'Scan',icon:scanIcon,url:'https://scan.sherpax.io/'},
-    {name:'LightPaper',icon:lightPaper,url:'https://singapore-chainx.oss-ap-southeast-1.aliyuncs.com/chainx.org/Chainx.pdf?versionId=CAEQDxiBgICllPel6xciIDUyMWMzNzk0ZjgzNzRjY2ZiNzRlYzNkYTEyZGUwNzNk'}]
+    {name:'Scan',icon:scanIcon,url:'https://scan.sherpax.io/'}]
+//     {name:'LightPaper',icon:lightPaper,url:'https://singapore-chainx.oss-ap-southeast-1.aliyuncs.com/chainx.org/Chainx.pdf?versionId=CAEQDxiBgICllPel6xciIDUyMWMzNzk0ZjgzNzRjY2ZiNzRlYzNkYTEyZGUwNzNk'}]
 
   return (
     <Menu right  {...props} customBurgerIcon={< img src={more} />} customCrossIcon={< img src={close} />}>
