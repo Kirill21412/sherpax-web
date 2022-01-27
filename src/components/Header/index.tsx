@@ -18,11 +18,13 @@ function Home(): React.ReactElement
 	`;
 	const linkList = [{name: 'ChainX', url: 'https://www.chainx.org/en/'}, {
 		name: 'Wallet',
-		url: 'https://wallet.sherpax.io/'
-	}, {name: 'Scan', url: 'https://scan.sherpax.io/'}, {
-		name: 'LightPaper',
-		url: 'https://singapore-chainx.oss-ap-southeast-1.aliyuncs.com/chainx.org/Chainx.pdf?versionId=CAEQDxiBgICllPel6xciIDUyMWMzNzk0ZjgzNzRjY2ZiNzRlYzNkYTEyZGUwNzNk'
+		url: 'https://apps.sherpax.io/'
 	}]
+// 			  {name: 'Scan', url: 'https://scan.sherpax.io/'}, {
+// 		name: 'LightPaper',
+// 		url: 'https://coming-application.oss-cn-hongkong.aliyuncs.com/coming-website/SherpaX%20Lightpaper.pdf'
+// 	}
+			 
 
 	return (
 		<div className="flex flex-row justify-between bg-topBar-black px-15 py-1">
