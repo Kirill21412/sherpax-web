@@ -1,29 +1,24 @@
 import React from "react";
 import img from "../../assets/img3.svg"
-import imgSherpax from "../../assets/sherpax.svg"
 
 import styled from 'styled-components';
-
-
 
 function ThirdPage(): React.ReactElement
 {
     const TitleContent = styled.div`
         max-width: 25.75rem;
         font-size: 32px;
-        font-family: Helvetica-Bold, Helvetica;
         font-weight: bold;
         color: #FFFFFF;
         line-height: 38px;
     `;
     const ContentSherpaX = styled.div`
         max-width: 27.625rem;
-        font-size:16px;
-        font-family:Helvetica-Light, Helvetica;
-        font-weight:300;
-        color:#ffffff;
-        line-height:24px;
-        margin-top:42px;
+        font-size:16px;
+        font-weight:300;
+        color:#ffffff;
+        line-height:24px;
+        margin-top:42px;
     `;
 
 

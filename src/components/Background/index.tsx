@@ -114,6 +114,9 @@ function Background(): React.ReactElement
                 :
                 <ChangeNetDiv5 style={{ width: `${size.width}px`, borderRight: `${size.width}px solid black`, top: '150rem' }} />
             }
+            <ChangeNetDiv5 style={{ width: `${size.width}px`, borderRight: `${size.width}px solid black`, top: '165rem' }} />
+            <ChangeNetDiv5 style={{ width: `${size.width}px`, borderRight: `${size.width}px solid black`, top: '250rem' }} />
+
 
         </>
     );

@@ -11,9 +11,9 @@ function FourthPage(): React.ReactElement
     const ImgBoxLeft = styled.div`
         width:35.93rem;
         height:35.93rem;
-        padding-left:2.625rem;
+        padding-left:2.625rem;
         margin-right:2.625rem;
-    `;
+    `;
     const TitleContent = styled.div`
         max-width:25.75rem;
         font-size:32px;
@@ -25,7 +25,7 @@ function FourthPage(): React.ReactElement
     const ContentSherpaX = styled.div`
         max-width:29.06rem;
         font-size:16px;
-        font-family:Helvetica-Light, Helvetica;
+        font-family:Helvetica-Light,Helvetica;
         font-weight:300;
         color:#333333;
         line-height:24px;
