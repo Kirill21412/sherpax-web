@@ -6,8 +6,7 @@ import styled from 'styled-components';
 import Child3Item from './circle';
 
 
-function CharterPage(): React.ReactElement {
-  const TitleContent = styled.div`
+const TitleContent = styled.div`
     max-width: 25.75rem;
     font-size: 32px;
     font-family: Helvetica-Bold, Helvetica;
@@ -15,7 +14,7 @@ function CharterPage(): React.ReactElement {
     color: #FFFFFF;
     line-height: 38px;
   `;
-  const ContentSherpaX = styled.div`
+const ContentSherpaX = styled.div`
     max-width: 27.625rem;
     font-size: 16px;
     font-family: Helvetica-Light, Helvetica;
@@ -24,6 +23,9 @@ function CharterPage(): React.ReactElement {
     line-height: 24px;
     margin-top: 42px;
   `;
+
+
+function CharterPage(): React.ReactElement {
 
 
   return (

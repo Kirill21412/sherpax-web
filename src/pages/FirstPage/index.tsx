@@ -4,13 +4,8 @@ import circle from "../../assets/img1.svg"
 import styled from 'styled-components';
 import { copy } from "../../helps/copy";
 
-
-
-function FirstPage(): React.ReactElement
-{
-    const SherpaXTitle = styled.div`
+const SherpaXTitle = styled.div`
     font-size: 4.25rem;
-    font-family: Helvetica-Bold, Helvetica;
     font-weight: bold;
     color: #FFFFFF;
     line-height: 5.25rem;
@@ -19,17 +14,16 @@ function FirstPage(): React.ReactElement
     -webkit-text-fill-color: transparent;
     `;
 
-    const ContentDiv = styled.div`
+const ContentDiv = styled.div`
         width: 35.875rem;
         height: 6rem;
         font-size: 1.375rem;
-        font-family: Helvetica-Light, Helvetica;
         font-weight: 300;
         color: #FFFFFF;
         line-height: 2rem;
     `;
 
-    const BgDiv = styled.div`
+const BgDiv = styled.div`
         width:37.5rem;
         height:30.125rem;
         z-index:-1;
@@ -38,7 +32,7 @@ function FirstPage(): React.ReactElement
         right:0;
     `;
 
-    const Bgcontent = styled.div`
+const Bgcontent = styled.div`
         width:28.5rem;
         height:21.125rem;
         top: 5.125rem;
@@ -47,33 +41,21 @@ function FirstPage(): React.ReactElement
         right:4rem;
 
     `;
-    const JoinDiv = styled.div`
+const JoinDiv = styled.div`
         width: 10rem;
         height: 3.375rem;
         background: linear-gradient(158deg, #0097FF 0%, #B930C0 100%);
         border-radius: 2.25rem;
         padding:0.75rem 2.75rem;
     `;
-    const JoinSpan = styled.div`
-        height: 2rem;
-        font-size: 1.375rem;
-        line-height: 2rem;
-        text-align:center;
-        font-family: NotoSansSC-Bold, NotoSansSC;
-        font-weight: bold;
-        color: #FFFFFF;
-    `;
-    const BgBox = styled.div`
-    width: 0px;
-    height: 0px;
-    border-color: red transparent transparent red;
-    border-width: 50px 50px 50px 50px;
-    border-style: solid;
-`;
+
+function FirstPage(): React.ReactElement
+{
+
 
     return (
         <>
-            <div className="flex flex-row justify-between ml-12" >
+            <div className="flex flex-row justify-between" style={{marginLeft:'6.25rem'}} >
                 <div className="flex flex-col ">
                     <SherpaXTitle className="pt-28 w-148">ChainX's Canary Network</SherpaXTitle>
                     <ContentDiv className="py-12">

@@ -2,7 +2,11 @@ import React, { useEffect } from 'react';
 import * as echarts from 'echarts';
 import styled from 'styled-components';
 
-const Child3Item = () => {
+interface props {
+  width?:string
+  height?:string
+}
+const Child3Item = ({width,height}:props) => {
 
   const initChart = () => {
     const element = document.getElementById('chart3');
@@ -251,7 +255,7 @@ const Child3Item = () => {
   }, []);
 
   return (
-    <div id="chart3" style={{width: '45%', height: '600px'}}></div>
+    <div id="chart3" style={{width: `${width?width:'45%'}`, height:`${height?height:'600px'}`}}></div>
   );
 };
 

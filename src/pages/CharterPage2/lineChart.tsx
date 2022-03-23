@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
 import * as echarts from 'echarts';
-
-const LineChart = () => {
+interface props {
+  width?:string
+  height?:string
+}
+const LineChart = ({width,height}:props) => {
 
   const initChart = () => {
     const element = document.getElementById('chart4');
@@ -171,8 +174,8 @@ const LineChart = () => {
   }, []);
 
   return (
-    <div id="chart4" style={{width: '80%', height: '600px'}}></div>
-  );
+  <div id="chart4" style={{width: `${width?width:'80%'}`, height:`${height?height:'600px'}`}}></div>
+);
 };
 
 export default LineChart;

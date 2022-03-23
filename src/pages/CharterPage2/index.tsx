@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import LineChart from './lineChart';
-
-
-function Charter(): React.ReactElement {
-  const ContentSherpaX = styled.div`
+const ContentSherpaX = styled.div`
     width: 44rem;
     font-size: 16px;
     font-weight: 300;
@@ -13,14 +10,14 @@ function Charter(): React.ReactElement {
     margin: 42px 0;
     text-align: center;
   `;
-  const Ksx = styled.div`
+const Ksx = styled.div`
     height: 38px;
     font-size: 32px;
     font-weight: bold;
     color: #FFFFFF;
     line-height: 38px;
   `;
-  const DetailsBtn = styled.div`
+const DetailsBtn = styled.div`
     width: fit-content;
     background: linear-gradient(158deg, #0097FF 0%, #B930C0 100%);
     border-radius: 36px;
@@ -36,9 +33,9 @@ function Charter(): React.ReactElement {
     }
   `;
 
-  const LineChartContent = styled.div`
+const LineChartContent = styled.div`
     position: absolute;
-    bottom:21rem;
+    bottom:8rem;
     color: white;
     display: flex;
     flex-direction: row;
@@ -61,6 +58,9 @@ function Charter(): React.ReactElement {
     }
   `
 
+function Charter(): React.ReactElement {
+
+
   return (
     <>
       <div className="flex flex-col justify-center" style={{backgroundColor: 'black'}}>
@@ -68,7 +68,7 @@ function Charter(): React.ReactElement {
           <Ksx>KSX DISTRIBUTION</Ksx>
           <div style={{width: '100px', height: '4px', background: '#FFFFFF', margin: '1rem auto'}}></div>
         </div>
-        <div className="flex flex-row justify-center">
+        <div className="relative flex flex-row justify-center">
           <LineChart/>
           <LineChartContent>
             <span>3.1 KSX/ BLOCK <br/><span>OR</span> 44707.6 KSX/ DAY</span>

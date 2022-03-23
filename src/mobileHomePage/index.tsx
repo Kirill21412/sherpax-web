@@ -12,6 +12,7 @@ import FourthPage from "./fourthMbolPage";
 import FifthPage from "./fifthMbolPage";
 import SixthPage from "./sixthMbolPage";
 import FooterPage from "./footerMbolPage";
+import { SevenPage } from "./SevenPage";
 
 const MbolWrap = styled.div`
   //   * {
@@ -30,6 +31,7 @@ const MobileHomePage = () =>
       <FourthPage />
       <FifthPage />
       <SixthPage />
+      <SevenPage/>
       <FooterPage />
       <div className={'showMessage'} style={{
         display: 'none', position: 'fixed',
