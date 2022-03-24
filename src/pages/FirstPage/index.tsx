@@ -55,7 +55,7 @@ function FirstPage(): React.ReactElement
 
     return (
         <>
-            <div className="flex flex-row justify-between" style={{marginLeft:'6.25rem'}} >
+            <div className="flex flex-row justify-between ml-12" >
                 <div className="flex flex-col ">
                     <SherpaXTitle className="pt-28 w-148">ChainX's Canary Network</SherpaXTitle>
                     <ContentDiv className="py-12">
