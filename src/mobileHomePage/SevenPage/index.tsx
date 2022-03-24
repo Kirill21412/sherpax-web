@@ -4,11 +4,12 @@ import styled from 'styled-components';
 import LineChart from '../../pages/CharterPage2/lineChart';
 
 const TitleContent = styled.div`
-  padding: 2rem 2rem;
-  font-size: 32px;
-    font-weight: bold;
     color: #FFFFFF;
-    line-height: 38px;
+    padding: 2vw 8vw;
+    font-size: 7.2vw;
+    font-weight: bold;
+    line-height: 8.667vw;
+    max-width: 80vw;
   `;
 const ContentSherpaX = styled.div`
   padding: 2rem 2rem;
@@ -27,11 +28,10 @@ const ContentSherpaX = styled.div`
 //     text-align: center;
 //   `;
 const Ksx = styled.div`
-  height: 38px;
-  font-size: 32px;
+  font-size: 7.2vw;
   font-weight: bold;
+  line-height: 8.667vw;
   color: #FFFFFF;
-  line-height: 38px;
 `;
 const DetailsBtn = styled.div`
   width: fit-content;
@@ -89,9 +89,9 @@ export function SevenPage(): React.ReactElement {
         <Child3Item width={'100%'} height={'25rem'}/>
       </div>
       <div className="flex flex-col justify-center" style={{backgroundColor: 'black'}}>
-        <div className="flex flex-col justify-center mt-10" style={{margin: '3rem auto 2rem auto'}}>
+        <div className="flex flex-col justify-center mt-10" style={{margin: '2vw 8vw'}}>
           <Ksx>KSX DISTRIBUTION</Ksx>
-          <div style={{width: '100px', height: '4px', background: '#FFFFFF', margin: '1rem auto'}}></div>
+          <div style={{width: '100px', height: '1px', background: '#838383', marginTop:'5vw'}}></div>
         </div>
         <div className="flex flex-row justify-center relative">
           <LineChart width={'100%'} height={'20rem'}/>

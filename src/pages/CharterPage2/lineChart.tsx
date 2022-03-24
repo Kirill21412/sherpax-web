@@ -103,6 +103,13 @@ const LineChart = ({width,height}:props) => {
           areaStyle: {
             color:'transparent',
           },
+          emphasis: {
+            itemStyle: {
+              color:'white',
+              borderWidth: 3,
+              borderColor: "#3AA7FF"
+            }
+          },
           data:[10321050.8,10321050.8,'-','-','-']
 
         },
@@ -123,6 +130,13 @@ const LineChart = ({width,height}:props) => {
                     offset: 1,
                     color: '#3AAAFF'
                   }]),
+          },
+          emphasis: {
+            itemStyle: {
+              color:'white',
+              borderWidth: 3,
+              borderColor: "#3AA7FF"
+            }
           },
           data:['-',10321050.8,18368415.2,'-','-']
 
@@ -145,6 +159,13 @@ const LineChart = ({width,height}:props) => {
                 color: '#fff'
               }])
             },
+          emphasis: {
+            itemStyle: {
+              color:'white',
+              borderWidth: 3,
+              borderColor: "#3AA7FF"
+            }
+          },
           data:['-','-',18368415.2 ,21000000,'-']
 
         },
@@ -159,6 +180,13 @@ const LineChart = ({width,height}:props) => {
           },
           areaStyle: {
             color:'transparent'
+          },
+          emphasis: {
+            itemStyle: {
+              color:'white',
+              borderWidth: 3,
+              borderColor: "#3AA7FF"
+            }
           },
           data:['-','-','-',21000000,21000000]
 

@@ -20,17 +20,17 @@ const Child3Item = ({width,height}:props) => {
         name: 'PCX holders',
       },
       {
-        value: 100,
-        name: 'CID NFT mining',
-      },
-      {
-        value: 20,
-        name: 'giveaway',
-      },
-      {
         value: 430,
         name: 'Governed by the community',
       },
+      {
+        value: 100,
+        name: 'Virtual mining',
+      },
+      {
+        value: 20,
+        name: 'Giveaway',
+      }
     ];
     const colorList = [
       new echarts.graphic.LinearGradient(0, 0, 0, 1, [
@@ -43,7 +43,7 @@ const Child3Item = ({width,height}:props) => {
           color: '#32E1EC',
         },
       ]),
-        new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+      new echarts.graphic.LinearGradient(0, 0, 0, 1, [
           {
             offset: 0,
             color: '#DD1359',
@@ -74,11 +74,11 @@ const Child3Item = ({width,height}:props) => {
         },
       ]),
     ];
+
     const sum = chartData.reduce((per, cur) => per + cur.value, 0);
 
     const pieData1 = [];
     const pieData2 = [];
-
     for (let i = 0; i < chartData.length; i++) {
       pieData1.push({
         ...chartData[i],
@@ -108,16 +108,19 @@ const Child3Item = ({width,height}:props) => {
     }
 
     let option = {
+      // backgroundColor: {
+      //   repeat: "repeat",
+      // },
       tooltip: {
         trigger: 'item',
         formatter: (item: any) => {
           let html = '';
-          const itemColor = item.color
+          const itemColor = item.color.colorStops[0].color
           const itemData = item.data;
-          html += `<div style="color: rgba(0, 0, 0, 0.65);font-size: 14px;line-height: 22px">
+          html += `<div style="font-size: 14px;line-height: 22px; background: white">
                    <span style="display:inline-block;margin-right:5px;border-radius:10px;width:10px;height:10px;background-color:${itemColor};"></span>
-                ${itemData.name}
-                <span style="font-weight: 500;">${itemData.value / 10 + '%'}</span>
+                  <span>${itemData.name}</span>
+                  <span style="font-weight: 500;">${itemData.value / 10 + '%'}</span>
                 </div>`;
           return html;
         }
@@ -200,7 +203,7 @@ const Child3Item = ({width,height}:props) => {
           return '{name|' + name + '}' + '{percent|' + value + '}' + ' %';
         },
       },
-
+      color: colorList,
       series: [
         {
           type: 'pie',
@@ -219,6 +222,7 @@ const Child3Item = ({width,height}:props) => {
           emphasis: {
             label: {
               show: true,
+              borderRadius:20,
               width:160,
               height:60,
               overflow:'break',
