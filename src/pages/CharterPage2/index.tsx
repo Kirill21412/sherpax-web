@@ -53,7 +53,7 @@ const LineChartContent = styled.div`
         margin-left: 3rem;
       }
       :nth-child(2){
-        margin-left: 8rem;
+        margin-left: 5.5rem;
       }
     }
   `

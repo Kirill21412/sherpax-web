@@ -219,8 +219,8 @@ const Child3Item = ({width,height}:props) => {
           emphasis: {
             label: {
               show: true,
-              width:200,
-              height:100,
+              width:160,
+              height:60,
               overflow:'break',
               fontSize: 20,
               fontWeight: 'bold',
