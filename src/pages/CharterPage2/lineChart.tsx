@@ -65,8 +65,8 @@ const LineChart = ({width,height}:props) => {
       yAxis: {
         name: 'KSX',
         type: "value",
-        splitNumber : 8,
-        max:21000000,
+        // splitNumber : 8,
+        // max:21000000,
         nameTextStyle: {
           borderType: 'dotted',
           borderDashOffset: 1,
